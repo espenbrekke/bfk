@@ -52,9 +52,16 @@ components:
           type: string
         versjonsInformasjon:
           type: string
+        gyldigFra:
+          type: string
+          format: "date-time"
         kunnskapsmodell:
           type:
             $ref: "#/components/schemas/Kunnskapsmodell" 
+        faser:
+          type: array
+          items:
+            $ref: "#/components/schemas/Fase"
         prosesser: 
           type: array
           items:
@@ -123,7 +130,7 @@ components:
       properties:
         id:
           type: string
-          format: uri
+          format: "uri"
         type:
           type: string
           enum: ["reflekterende", "generelt"]
@@ -133,7 +140,7 @@ components:
           type: array
           items: 
             type: string
-            format: uri        
+            format: "uri-reference"        
     Fase:
       type: object
       required: 
@@ -150,7 +157,7 @@ components:
           $ref: "#/components/schemas/FaseType"
         frist:
           type: integer
-          description: "Antall kalenderdager fra prosessen starter til den skal være fullført"
+          description: "Antall kalenderdager starter til den skal være fullført"
     Prosess:
       type: object
       required:
@@ -166,19 +173,44 @@ components:
         definisjon:
           type: string
         fase:
-          type:
-            $ref: "#/components/schemas/FaseType"
+          type: string
+          format: "uri-reference"          
         oppgaver:
           type: array
           items:
             $ref: "#/components/schemas/Oppgave"
     Oppgave:
       type: object
+      required:
+        - id
+        - navn
+        - definisjon
       properties:
         id: 
           type: string
           format: "uri"
-        
+        navn:
+          type: string
+        definisjon:
+          type: string
+        tiltak: 
+          type: array 
+          items:
+            $ref: "#/components/schemas/TiltakType"
+        aktiviteter: 
+          type: array
+          items: 
+            $ref: "#/components/schemas/Aktivitet"
+    Aktivitet:
+      type: object
+      properties:
+        id: 
+          type: string 
+          format: uri
+        navn:
+          type: string
+        definisjon: 
+          type: string          
     FaseType:
       type: string
       enum: ["bekymringsmelding", "undersøkelse", "tiltak", "evaluering"]
@@ -188,11 +220,11 @@ components:
     Error:
       type: object
       required:
-        - code
-        - message
+        - kode
+        - meldig
       properties:
-        code:
+        kode:
           type: integer
           format: int32
-        message:
+        melding:
           type: string
