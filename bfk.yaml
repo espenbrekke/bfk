@@ -1,0 +1,181 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: BFK
+  license:
+    name: MIT
+servers:
+  - url: http://data.bufdir.no/api/bfk
+paths:
+  /alt:
+    get:
+      summary: Returnerer hele modellen
+      tags:
+        - alt 
+      responses:
+        '200':
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BarnevernfagligKvalitetsystem"      
+  /prosesser:
+    get:
+      summary: liste over prosesser
+      tags:
+        - prosesser
+      responses:
+        '200':
+          description: Expected response to a valid request
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /prosesser/{prosessId}:
+    get:
+      summary: hent en prosesser
+      tags:
+       - prosesser      
+
+components:
+  schemas:
+    BarnevernfagligKvalitetsystem:
+      type: object
+      description: "Kvalitetssystemet"
+      required:
+        - versjon
+        - versjonsInformasjon
+      properties:
+        versjon:
+          type: string
+        versjonsInformasjon:
+          type: string
+        kunnskapsmodell:
+          type:
+            $ref: "#/components/schemas/Kunnskapsmodell" 
+        prosesser: 
+          type: array
+          items:
+            $ref: "#/components/schemas/Prosess"
+        spørsmål:
+          type: array
+          items:
+            $ref: "#/components/schemas/Spørsmål"
+    Kunnskapsmodell:
+      type: object
+      description: "Beskrivelse av kunnskapsmodell"
+      properties:
+        id: 
+          type: string    
+          format: "uri"
+        beskrivelse:
+          type: string    
+        dimensjoner:
+          description: 
+          type: array
+          items:
+            $ref: "#/components/schemas/Dimensjon"
+          minItems: 3        
+    Dimensjon:
+      type: object
+      required:
+        - id
+        - navn
+        - definisjon
+      properties:
+        id:
+          type: string
+          format: "uri"
+        kode:
+          type: string
+        navn:
+          type: string
+        definisjon:
+          type: string
+        beskrivelse:
+          type: string
+        områder: 
+          type: array
+          items: 
+            $ref: "#/components/schemas/Område"          
+    Område:
+      type: object
+      required:
+        - id
+        - navn
+        - definisjon
+      properties:
+        id: 
+          type: string
+          format: "uri"
+        kode:
+          type: string
+        navn: 
+          type: string
+        definisjon:
+          type: string
+        beskrivelse:
+          type: string
+    Spørsmål:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uri
+        type:
+          type: string
+          enum: ["reflekterende", "generelt"]
+        spørsmålstekst:
+          type: string
+        områdeReferanse:
+          type: array
+          items: 
+            type: string
+            format: uri        
+    Prosess:
+      type: object
+      required:
+        - id
+        - navn
+        - definisjon
+      properties:
+        id:
+          type: string
+          format: "uri"         
+        navn:
+          type: string
+        definisjon:
+          type: string
+        fase:
+          type:
+            $ref: "#/components/schemas/FaseType"
+        oppgaver:
+          type: array
+          items:
+            $ref: "#/components/schemas/Oppgave"
+    Oppgave:
+      type: object
+      properties:
+        id: 
+          type: string
+          format: "uri"
+        
+    FaseType:
+      type: string
+      enum: ["bekymringsmelding", "undersøkelse", "tiltak", "evaluering"]
+    TiltakType:
+      type: string
+      enum: ["akutt", "fosterhjemsplassering", "institusjonsplassering"]
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
