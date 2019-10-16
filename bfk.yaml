@@ -249,6 +249,9 @@ components:
           format: "uri-reference"
         autoritet:
           type: string        
+    TekstType:
+      type: string
+      enum: ["Introtekst", "Hjelpetekst", "Fordypningstekst"]
     FaseType:
       type: string
       enum: ["bekymringsmelding", "undersøkelse", "tiltak", "evaluering"]
