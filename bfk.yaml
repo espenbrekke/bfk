@@ -134,6 +134,23 @@ components:
           items: 
             type: string
             format: uri        
+    Fase:
+      type: object
+      required: 
+        - id
+      properties:
+        id: 
+          type: string
+          format: "uri"
+        navn:
+          type: string
+        definisjon:
+          type: string
+        faseType:
+          $ref: "#/components/schemas/FaseType"
+        frist:
+          type: integer
+          description: "Antall kalenderdager fra prosessen starter til den skal være fullført"
     Prosess:
       type: object
       required:
