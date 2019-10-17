@@ -32,12 +32,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/BarnevernfagligKvalitetssystem"
-  /{versjon}/prosesser/{prosessId}:
-    get:
-      summary: hent en spesifik prosess
-      tags:
-        - prosess      
+                $ref: "#/components/schemas/BarnevernfagligKvalitetssystem"     
 components:
   schemas:
     BarnevernfagligKvalitetsystem:
