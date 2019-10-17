@@ -7,54 +7,58 @@ info:
 servers:
   - url: http://data.bufdir.no/api/bfk
 paths:
-  /alt:
+  /:
     get:
-      summary: Returnerer hele modellen
+      summary: Returnerer en liste over bfk modellene som er tilgjengelige. Kun de viktigste egenskapene til bfk-modellene blir returnert.
       tags:
-        - alt 
+        - bfk 
       responses:
         '200':
           description: Expected response to a valid request
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/BarnevernfagligKvalitetsystem"      
-  /prosesser:
+                type: array
+                items: 
+                  $ref: "#/components/schemas/BarnevernfagligKvalitetsystem"      
+  /{versjon}:
     get:
-      summary: liste over prosesser
+      summary: Returnerer en komplett bfk-modell
       tags:
-        - prosesser
+        - bfk
       responses:
         '200':
-          description: Expected response to a valid request
-        default:
-          description: unexpected error
+          description: Forventet response på en gyldig rekvest
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Error"
-  /prosesser/{prosessId}:
+                $ref: "#/components/schemas/BarnevernfagligKvalitetssystem"
+  /{versjon}/prosesser/{prosessId}:
     get:
-      summary: hent en prosesser
+      summary: hent en spesifik prosess
       tags:
-       - prosesser      
-
+       - prosess      
 components:
   schemas:
     BarnevernfagligKvalitetsystem:
       type: object
-      description: "Kvalitetssystemet"
+      description: Kvalitetssystemet
       required:
         - versjon
         - versjonsInformasjon
       properties:
         versjon:
           type: string
+          description: Versjonsnummeret til denne bfk-modellen
         versjonsInformasjon:
           type: string
+          description: Beskrivelse av endringene i denne versjonen sett i forhold til forrige versjon
         gyldigFra:
           type: string
-          format: "date-time"
+          format: date
+        gyldigTil:
+          type: string
+          format: date
         kunnskapsmodell:
           type:
             $ref: "#/components/schemas/Kunnskapsmodell" 
@@ -84,7 +88,7 @@ components:
       properties:
         id: 
           type: string    
-          format: "uri"
+          format: uri
         beskrivelse:
           type: string    
         dimensjoner:
@@ -102,7 +106,7 @@ components:
       properties:
         id:
           type: string
-          format: "uri"
+          format: uri
         kode:
           type: string
         navn:
@@ -124,7 +128,7 @@ components:
       properties:
         id: 
           type: string
-          format: "uri"
+          format: uri
         kode:
           type: string
         navn: 
@@ -138,7 +142,7 @@ components:
       properties:
         id:
           type: string
-          format: "uri"
+          format: uri
         type:
           type: string
           enum: ["reflekterende", "generelt"]
@@ -148,7 +152,7 @@ components:
           type: array
           items: 
             type: string
-            format: "uri-reference"        
+            format: uri-reference     
     Fase:
       type: object
       required: 
@@ -156,14 +160,14 @@ components:
       properties:
         id: 
           type: string
-          format: "uri"
+          format: uri
         navn:
           type: string
         definisjon:
           type: string
         frist:
           type: integer
-          description: "Antall kalenderdager starter til den skal være fullført"
+          description: Maksimumskrav til antall kalenderdager fasen kan vare
     Prosess:
       type: object
       required:
@@ -173,14 +177,14 @@ components:
       properties:
         id:
           type: string
-          format: "uri"         
+          format: uri
         navn:
           type: string
         definisjon:
           type: string
         fase:
           type: string
-          format: "uri-reference"          
+          format: uri-reference          
         oppgaver:
           type: array
           items:
@@ -194,7 +198,7 @@ components:
       properties:
         id: 
           type: string
-          format: "uri"
+          format: uri
         navn:
           type: string
         definisjon:
@@ -209,6 +213,8 @@ components:
             $ref: "#/components/schemas/Aktivitet"
     Aktivitet:
       type: object
+      required:
+        - navn
       properties:
         id: 
           type: string 
@@ -219,39 +225,50 @@ components:
           type: string          
     Kunnskap:
       type: object
+      required:
+        - tittel
+        - TekstType
+        - tekst
       properties:
         id: 
           type: string
-          format: "uri"
+          format: uri
         tittel:
           type: string
         type:
           $ref: "#/components/schemas/TekstType"
         tekst:
           type: string
-          description: "sammenfatning av kunnskapen"
+          description: Sammenfatning av kunnskapen
         emneord:
-          description: "Referanse til begrepskatalogen"
+          description: Referanse til begrepskatalogen
           type: array
           items: 
             type: string
-            format: "uri-reference"
+            format: uri-reference
         kilde: 
-          description: "Referanse til kilder"
+          description: Liste av kildehenvisninger
           type: array
           items:
             $ref: "#/components/schemas/Kilde"
     Kilde:
       type: object
+      description: En kildehenvisning
       properties:
         referanse: 
           type: string
-          format: "uri-reference"
+          format: uri-reference
         autoritet:
-          type: string        
+          type: string
+          description: Angivelse av hvilken autoritet som kilden har
+          example: Norsk lov
+        dato: 
+          type: string
+          format: date  
+          description: Dato for når kilden ble referert
     TekstType:
       type: string
-      enum: ["Introtekst", "Hjelpetekst", "Fordypningstekst"]
+      enum: ["introtekst", "hjelpetekst", "fordypningstekst"]
     FaseType:
       type: string
       enum: ["bekymringsmelding", "undersøkelse", "tiltak", "evaluering"]
