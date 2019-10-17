@@ -1,13 +1,13 @@
 openapi: "3.0.0"
 info:
-  version: 1.0.0
+  version: v1
   title: BFK
   license:
     name: MIT
 servers:
-  - url: http://data.bufdir.no/api/bfk
+  - url: https://data.bufdir.no/v1/bfk
 paths:
-  /:
+  '':
     get:
       summary: Returnerer en liste over bfk modellene som er tilgjengelige. Kun de viktigste egenskapene til bfk-modellene blir returnert.
       tags:
@@ -20,7 +20,7 @@ paths:
               schema:
                 type: array
                 items: 
-                  $ref: "#/components/schemas/BarnevernfagligKvalitetsystem"      
+                  $ref: "#/components/schemas/BarnevernfagligKvalitetsystem"   
   /{versjon}:
     get:
       summary: Returnerer en komplett bfk-modell
@@ -37,7 +37,7 @@ paths:
     get:
       summary: hent en spesifik prosess
       tags:
-       - prosess      
+        - prosess      
 components:
   schemas:
     BarnevernfagligKvalitetsystem:
