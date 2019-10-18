@@ -55,8 +55,7 @@ components:
           type: string
           format: date
         kunnskapsmodell:
-          type:
-            $ref: "#/components/schemas/Kunnskapsmodell" 
+          $ref: "#/components/schemas/Kunnskapsmodell" 
         faser:
           type: array
           items:
@@ -110,8 +109,10 @@ components:
           type: string
         definisjon:
           type: string
+          contentMediaType: text/html
         beskrivelse:
           type: string
+          contentMediaType: text/html
         områder: 
           type: array
           items: 
@@ -132,8 +133,10 @@ components:
           type: string
         definisjon:
           type: string
+          contentMediaType: text/html
         beskrivelse:
           type: string
+          contentMediaType: text/html
         kunnskap:
           type: array
           items: 
@@ -155,6 +158,7 @@ components:
           enum: ["reflekterende", "generelt"]
         spørsmålstekst:
           type: string
+          contentMediaType: text/html
         dimensjoner:
           type: array
           items: 
@@ -182,6 +186,7 @@ components:
           type: string
         definisjon:
           type: string
+          contentMediaType: text/html
         regler:
           type: string
           description: Oppsummering av reglene som gjelder for denne fasen
@@ -212,6 +217,7 @@ components:
           type: string
         definisjon:
           type: string
+          contentMediaType: text/html
         fase:
           type: string
           format: uri-reference
@@ -244,6 +250,7 @@ components:
           type: string
         definisjon:
           type: string
+          contentMediaType: text/html
         kunnskap:
           type: array
           items: 
@@ -266,7 +273,8 @@ components:
         navn:
           type: string
         definisjon: 
-          type: string          
+          type: string
+          contentMediaType: text/html     
     Kunnskap:
       type: object
       required:
@@ -283,6 +291,7 @@ components:
         artikkel:
           type: string
           description: Sammenfatning av kunnskapen
+          contentMediaType: text/html
         emneord:
           type: array
           items: 
@@ -319,7 +328,8 @@ components:
         utgiver: 
           type: string
         url:
-          type: uri
+          type: string
+          format: uri-reference
         år:
           type: integer      
           description: Utgivelsesår
