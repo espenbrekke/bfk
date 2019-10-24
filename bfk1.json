@@ -1,0 +1,91 @@
+{
+    "versjon": "0.1.0",
+    "versjonsInformasjon": "Første utgave",
+    "gjelderFra": "2017-11-01",
+    "kunnskapsmodell": {
+        "id": "bfk:10",
+        "dimensjoner": [
+            {
+                "id": "bfk:11",
+                "navn": "Barnets utvikling",
+                "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring",
+                "områder": [
+                    {
+                        "id": "bfk:111",
+                        "navn": "Helse",
+                        "definisjon": "Fysisk og psykisk helse."
+                    },
+                    {
+                        "id": "bfk:112",
+                        "navn": "Barnehage og skole",
+                        "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring."
+                    },
+                    {
+                        "id": "bfk:113",
+                        "navn": "Følelser og uttrykk",
+                        "definisjon": "Følelser og uttrykk handler om barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig."
+                    },
+                    {
+                        "id": "bfk:114",
+                        "navn": "Venner og fritid",
+                        "definisjon": "Barnets relasjoner til andre jevnaldrende og fritidsaktiviteter og -interesser."
+                    }                    
+                ]
+            },
+            {
+                "id": "bfk:12",
+                "navn": "Foreldrenes omsorg",
+                "definisjon": "Sentrale roller eller oppgaver foreldre har i kraft av å ha omsorgsansvaret for barn. Når oppgavene eller rollene er oppfylt eller tilfredsstillende ivaretatt, representerer de viktige beskyttende faktorer for et barn.",
+                "områder": [
+                    {
+                        "id": "bfk:121",
+                        "navn": "Grunnleggende omsorg",
+                        "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner."
+                    },
+                    {
+                        "id": "bfk:122",
+                        "navn": "Følelsmessig tilgjengelighet",
+                        "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår."
+                    },
+                    {
+                        "id": "bfk:123",
+                        "navn": "Stimulering og veiledning",
+                        "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet."                        
+                    },
+                    {
+                        "id": "bfk:124",
+                        "navn": "Beskyttelse",
+                        "definisjon": "Foreldrenes kapasitet til å beskytte barnet mot fysisk og psykisk vold, seksuelle overgrep, å være vitne til vold og ulike former for utnyttelse."
+                    }                    
+                ]
+            },
+            {
+                "id": "bfk:13",
+                "navn": "Familie og miljø",
+                "definisjon": "Dimensjon «familie og miljø» beskriver sosioøkonomiske faktorer av betydning for barnets og familiens levekår.",
+                "områder": [
+                    {
+                        "id": "bfk:131",
+                        "navn": "Familieforhold",
+                        "definisjon": "Sentrale faktorer er familiens sammensetning, slekt og sosiale nettverk, hvem som har den daglige omsorgen for barnet, foreldrenes helse og livsførsel, familieklima, søskens helse og utvikling, relasjon til søsken, familiebakgrunn, tidligere hendelser i familielivet, religion, språk og etnisk bakgrunn, samt særlige kulturelle og holdninger."
+                    },
+                    {
+                        "id": "bfk:132",
+                        "navn": "Bolig, økonomi og arbeid",
+                        "definisjon": "Familiens sosioøkonomiske forhold, foreldrenes tilknytning til arbeidsliv, utdanning og fattigdom."
+                    },
+                    {
+                        "id": "bfk:133",
+                        "navn": "Nettverk og sosial integrering",
+                        "definisjon": "Nettverket utover kjernefamilien; relasjon til slekt og nettverk, grad av integrering i minoritets- og majoritetssamfunn, bolig og nærmiljø, tilgang på hjelp og støtte fra private, frivillige organisasjoner og offentlig nettverk."
+                    }                    
+                ]
+            }
+        ]
+    },
+    "faser": [],
+    "prosesser": [],
+    "spørsmål": [],
+    "kunnskap": [],
+    "kilder": []
+}
