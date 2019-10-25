@@ -3,7 +3,7 @@
     "versjonsInformasjon": "Første utgave",
     "gjelderFra": "2017-11-01",
     "kunnskapsmodell": {
-        "id": "bfk:10",
+        "id": "http://data.bufdir.no/bfk/kunnskapsmodell",
         "dimensjoner": [
             {
                 "id": "http://data.bufdir.no/bfk/dimensjon/1",
@@ -87,10 +87,15 @@
         {
             "id": "http://data.bufdir.no/bfk/fase/1",
             "navn": "Bekymringsmelding",
-            "definisjon": "",
+            "definisjon": "Når barneverntjenesten mottar en bekymringsmelding, skal den snarest, og senest innen en uke, avgjøre om meldingen skal gå videre til undersøkelse eller om den skal henlegges",
             "frist": 7,
             "kunnskap": ["bfk:kunnskap:01"],
-            "kilder": []
+            "kilder": [
+                {
+                    "forhold": "sitert fra",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/1"
+                }
+            ]
         },
         {
             "id": "http://data.bufdir.no/bfk/fase/2",
@@ -153,48 +158,39 @@
                         }
                     ],
                     "kilder": [],
-                    "aktiviteter": [
-                        {
-                            "navn": "Registrer i System A",
-                            "definisjon": "Ctrl-R..."
-                        },
+                    "aktiviteter": []
                          {
                     "id": "http://data.bufdir.no/bfk/oppgave/2",
                     "navn": "Vurdere bekymringsmelding",
-                    "definisjon": "Lorum ipsum...",
-                    "sjekkliste": [
-                        { 
-                            "navn": "Registrer avgiver",
-                            "beskrivelse": "anonym, navn, telefonnr, tidspunkt"
-                        },
-                        {
-                            "navn": "Lærer",
-                            "beskrivelse": "Kontaktlærer ..."
-                        }
-                    ],
+                    "definisjon": "Grunnlaget for vurdering av en bekymringsmelding er; bekymringsmeldingen og eventuelle tidligere registrert informasjon på barnet eller søsken.",
+                    "kunnskapsmodell": "http://data.bufdir.no/bfk/kunnskapsmodell",
+                    "spørsmål": ["http://data.bufdir.no/bfk/spørsmål/2", "http://data.bufdir.no/bfk/spørsmål/3"],
+                    "sjekkliste":[],
                     "kilder": [],
-                    "aktiviteter": [
-                        {
-                            "navn": "Registrer i System A",
-                            "definisjon": "Ctrl-R..."
-                        }
-
-                    ]
+                    "aktiviteter": []
                 }
             ]
         }
     ],
     "spørsmål": [
         {
-            "id": "bfk:spørsmål:01",
-            "type": "generelt",
-            "spørsmålstekst": "Har barnet utslåtte tenner",
-            "dimensjon": ["bfk:11", "bfk:12"],
-            "områder": ["bfk:110", "bfk:121"],
+            "id": "http://data.bufdir.no/bfk/spørsmål/2",
+            "type": "reflekterende",
+            "spørsmålstekst": "Hva bekymrer?",
+            "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/spørsmål/3",
+            "type": "reflekterende",
+            "spørsmålstekst": "Hvordan kommer dette til uttrykk?",
+            "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+        }
             "kilder": [
                 {
-                    "forhold": "gjengitt",
-                    "kilde": "bfk:kilde:42"
+                    "forhold": "",
+                    "kilde": ""
                 }
             ]
         }
@@ -216,7 +212,17 @@
     ],
     "kilder": [
         {
-            "id": "bfk:kilde:42",
+            "id": "http://data.bufdir.no/bfk/kilde/1",
+            "tittel": "Saksbehandlingsrundskrivet",
+            "forfatter": "",
+            "utgiver": "Bufdir",
+            "år": "",
+            "type": "veileder",
+            "opprettet": "2019-01-10",
+            "url": "https://www.bufdir.no/Barnevern/Fagstotte/saksbehandlingsrundskrivet/"
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/kilde/1",
             "tittel": "En faglig artikkel",
             "forfatter": "Lars Lurium",
             "utgiver": "Heggtun forlag",
