@@ -173,7 +173,17 @@ components:
           type: array
           items: 
             type: string
-            format: uri-reference                 
+            format: uri-reference   
+     Kodeliste:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uri
+        kode:
+          type: string
+        navn:
+          type: string
     Fase:
       type: object
       required: 
@@ -264,6 +274,11 @@ components:
           items:
             $ref: "#/components/schemas/SjekklisteElement"
         spørsmål:
+          type: array
+          items: 
+            type: string
+            format: uri-reference
+        kodeliste:
           type: array
           items: 
             type: string
