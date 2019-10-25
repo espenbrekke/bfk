@@ -180,9 +180,11 @@ components:
         id:
           type: string
           format: uri
+        navn:
+          type: string
         kode:
           type: string
-        navn:
+        verdi:
           type: string
     Fase:
       type: object
