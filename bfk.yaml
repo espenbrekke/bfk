@@ -256,6 +256,9 @@ components:
           items: 
             type: string
             format: uri-reference
+        kunnskapsmodell:
+          type: string
+          format: uri-reference
         sjekkliste:
           type: array
           items:
