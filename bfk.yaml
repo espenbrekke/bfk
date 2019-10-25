@@ -265,8 +265,9 @@ components:
             $ref: "#/components/schemas/SjekklisteElement"
         spørsmål:
           type: array
-          items:
-            $ref: "#/components/schemas/spørsmål"
+          items: 
+            type: string
+            format: uri-reference
         kilder: 
           type: array
           items:
