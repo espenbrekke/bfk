@@ -260,6 +260,10 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/SjekklisteElement"
+        spørsmål:
+          type: array
+          items:
+            $ref: "#/components/schemas/spørsmål"
         kilder: 
           type: array
           items:
