@@ -85,25 +85,82 @@
     },
     "faser": [
         {
-            "id": "bfk:fase:01",
-            "navn": "Bekymringsmeldingsfasen",
+            "id": "http://data.bufdir.no/bfk/fase/1",
+            "navn": "Bekymringsmelding",
             "definisjon": "",
-            "frist": 10,
+            "frist": 7,
+            "kunnskap": ["bfk:kunnskap:01"],
+            "kilder": []
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/fase/2",
+            "navn": "Undersøkelse",
+            "definisjon": "",
+            "frist": 90,
+            "kunnskap": ["bfk:kunnskap:01"],
+            "kilder": []
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/fase/3",
+            "navn": "Tiltak",
+            "definisjon": "",
+            "frist": "",
+            "kunnskap": ["bfk:kunnskap:01"],
+            "kilder": []
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/fase/4",
+            "navn": "Evaluering",
+            "definisjon": "",
+            "frist": "",
             "kunnskap": ["bfk:kunnskap:01"],
             "kilder": []
         }
     ],
     "prosesser": [
         {
-            "id": "bfk:prosess:01",
+            "id": "http://data.bufdir.no/bfk/prosess/1",
             "navn": "Bekymringsmelding",
-            "definisjon": "Prosess for bekymringsmelding....",
+            "definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
             "fase": "bfk:fase:01",
-            "kunnskap": ["bfk:kunnskap:01"],
+            "kunnskap": ["http://data.bufdir.no/bfk/fase/1"],
             "oppgaver": [
                 {
-                    "id": "bfk:oppgave:01",
-                    "navn": "Motta melding",
+                    "id": "http://data.bufdir.no/bfk/oppgave/1",
+                    "navn": "Motta bekymringsmelding",
+                    "definisjon": "Lorum ipsum...",
+                    "spørsmål" : [
+                        {"id": "http://data.bufdir.no/bfk/spørsmål/1",
+                        "type": "reflekterende",
+                        "spørsmålstekst": "Er det behov for umiddelbar inngripen?"}
+                    ],
+                    "sjekkliste": [
+                        { 
+                            "navn": "Tidligere meldinger",
+                            "beskrivelse": "ingen, eller et tall"
+                        },
+                        {
+                            "navn": "Tidligere tiltak",
+                            "beskrivelse": "ingen, eller et tall"
+                        },
+                         {
+                            "navn": "Tidligere vedtak",
+                            "beskrivelse": "ingen, eller et tall"
+                        },
+                        {
+                            "navn": "Registrert sak på søsken",
+                            "beskrivelse": "ingen, eller et tall"
+                        }
+                    ],
+                    "kilder": [],
+                    "aktiviteter": [
+                        {
+                            "navn": "Registrer i System A",
+                            "definisjon": "Ctrl-R..."
+                        },
+                         {
+                    "id": "http://data.bufdir.no/bfk/oppgave/2",
+                    "navn": "Vurdere bekymringsmelding",
                     "definisjon": "Lorum ipsum...",
                     "sjekkliste": [
                         { 
