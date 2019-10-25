@@ -89,7 +89,7 @@
             "navn": "Bekymringsmelding",
             "definisjon": "Når barneverntjenesten mottar en bekymringsmelding, skal den snarest, og senest innen en uke, avgjøre om meldingen skal gå videre til undersøkelse eller om den skal henlegges",
             "frist": 7,
-            "kunnskap": ["bfk:kunnskap:01"],
+            "kunnskap": [""],
             "kilder": [
                 {
                     "forhold": "sitert fra",
@@ -102,7 +102,7 @@
             "navn": "Undersøkelse",
             "definisjon": "",
             "frist": 90,
-            "kunnskap": ["bfk:kunnskap:01"],
+            "kunnskap": [""],
             "kilder": []
         },
         {
@@ -110,7 +110,7 @@
             "navn": "Tiltak",
             "definisjon": "",
             "frist": "",
-            "kunnskap": ["bfk:kunnskap:01"],
+            "kunnskap": [""],
             "kilder": []
         },
         {
@@ -118,7 +118,7 @@
             "navn": "Evaluering",
             "definisjon": "",
             "frist": "",
-            "kunnskap": ["bfk:kunnskap:01"],
+            "kunnskap": [""],
             "kilder": []
         }
     ],
@@ -127,18 +127,14 @@
             "id": "http://data.bufdir.no/bfk/prosess/1",
             "navn": "Bekymringsmelding",
             "definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
-            "fase": "bfk:fase:01",
+            "fase": "http://data.bufdir.no/bfk/fase/1",
             "kunnskap": ["http://data.bufdir.no/bfk/fase/1"],
             "oppgaver": [
                 {
                     "id": "http://data.bufdir.no/bfk/oppgave/1",
                     "navn": "Motta bekymringsmelding",
                     "definisjon": "Lorum ipsum...",
-                    "spørsmål" : [
-                        {"id": "http://data.bufdir.no/bfk/spørsmål/1",
-                        "type": "reflekterende",
-                        "spørsmålstekst": "Er det behov for umiddelbar inngripen?"}
-                    ],
+                    "spørsmål": "http://data.bufdir.no/bfk/spørsmål/1",
                     "sjekkliste": [
                         { 
                             "navn": "Tidligere meldinger",
@@ -168,11 +164,31 @@
                     "sjekkliste":[],
                     "kilder": [],
                     "aktiviteter": []
-                }
+                },
+                 {
+                    "id": "http://data.bufdir.no/bfk/oppgave/3",
+                    "navn": "Konkludere bekymringsmelding",
+                    "definisjon": "En bekymringsmelding kan enten konkluderes med henleggelse eller videre undersøkelse",
+                    "spørsmål": [],
+                    "sjekkliste":[],
+                    "kodeliste": ["http://data.bufdir.no/bfk/kodeliste/1", "http://data.bufdir.no/bfk/kodeliste/2"],
+                    "kilder": [],
+                    "aktiviteter": [
+                        {
+                            "navn": "Sende tilbakemelding til melder",
+                            "definisjon": "Privat melder skal ha tilbakemelding om mottatt bekymringsmelding, offentlig melder skal ha tilbakemelding om konklusjon på bekymringsmelding"
+                        }
+                    ]
+                },
             ]
         }
     ],
     "spørsmål": [
+        {
+            "id": "http://data.bufdir.no/bfk/spørsmål/1",
+            "type": "reflekterende",
+            "spørsmålstekst": "Er det behov for umiddelbar inngripen?"
+        },
         {
             "id": "http://data.bufdir.no/bfk/spørsmål/2",
             "type": "reflekterende",
@@ -195,6 +211,118 @@
             ]
         }
     ],
+    "kodeliste": [
+        {
+            "id": "http://data.bufdir.no/bfk/kodeliste/1",
+            "navn": "Konklusjon type"
+        [
+            {
+            "kode": "1",
+            "navn": "Henlagt"
+            },
+            {
+            "kode": "2",
+            "navn": "Ikke henlagt – konklusjonsdato melding (eventuelt 7 dager etter mottatt melding) er startdato undersøkelse"
+            },
+            {
+            "kode": "3",
+            "navn": "Henlagt utenfor BVL"
+            },
+             {
+            "kode": "4",
+            "navn": "Henlagt, vist til annen instans"
+            },
+             {
+            "kode": "5",
+            "navn": "Henlagt, overført til en annen kommune"
+            }
+  ]
+        },
+          {
+            "id": "http://data.bufdir.no/bfk/kodeliste/2",
+            "navn": "Saksinnhold type"
+        [
+            {
+            "kode": "1",
+            "navn": "Foreldres somatiske sykdom"
+            },
+            {
+            "kode": "2",
+            "navn": "Foreldres psykiske problem/lidelse"
+            },
+            {
+            "kode": "3",
+            "navn": "Foreldres rusmisbruk"
+            },
+             {
+            "kode": "4",
+            "navn": "Foreldres manglende foreldreferdigheter"
+            },
+             {
+            "kode": "5",
+            "navn": "Foreldres kriminalitet"
+            },
+             {
+            "kode": "6",
+            "navn": "Høy grad av konflikt hjemmet"
+            },
+             {
+            "kode": "7",
+            "navn": "Vold i hjemmet/barnet vitne til vold i nære relasjoner"
+            },
+             {
+            "kode": "8",
+            "navn": "Barnet utsatt for vanskjøtsel (Barnet overlatt til seg selv, dårlig kosthold, dårlig hygiene)"
+            },
+             {
+            "kode": "9",
+            "navn": "Barnet utsatt for fysisk mishandling"
+            },
+             {
+            "kode": "10",
+            "navn": "Barnet utsatt for psykisk mishandling"
+            },
+             {
+            "kode": "11",
+            "navn": "Barnet utsatt for seksuelle overgrep"
+            },
+             {
+            "kode": "12",
+            "navn": "Barnet mangler omsorgsperson"
+            },
+             {
+            "kode": "13",
+            "navn": "Barnet har nedsatt funksjonsevne"
+            },
+             {
+            "kode": "14",
+            "navn": "Barnets psykiske problem/lidelse"
+            },
+             {
+            "kode": "15",
+            "navn": "Barnets rusmisbruk"
+            },
+             {
+            "kode": "16",
+            "navn": "Barnets atferd/kriminalitet"
+            },
+             {
+            "kode": "17",
+            "navn": "Barnets relasjonsvansker (mistanke om tilknytningsvansker, problematikk knyttet til samspillet mellom barn og omsorgspersoner) "
+            },
+             {
+            "kode": "18",
+            "navn": "Andre forhold ved foreldre/familien (krever presisering) (Denne kategorien skal kunne benyttes dersom ingen av kategoriene 1-17 passer.)"
+            },
+             {
+            "kode": "19",
+            "navn": "Andre forhold ved barnets situasjon (krever presisering) (Denne kategorien skal kunne benyttes dersom ingen av kategoriene 1-17 passer.)"
+            }
+  ]
+        }
+ 
+        ],
+
     "kunnskap": [
         {
             "id": "bfk:kunnskap:01",
@@ -220,15 +348,6 @@
             "type": "veileder",
             "opprettet": "2019-01-10",
             "url": "https://www.bufdir.no/Barnevern/Fagstotte/saksbehandlingsrundskrivet/"
-        },
-        {
-            "id": "http://data.bufdir.no/bfk/kilde/1",
-            "tittel": "En faglig artikkel",
-            "forfatter": "Lars Lurium",
-            "utgiver": "Heggtun forlag",
-            "år": 1962,
-            "type": "veileder",
-            "opprettet": "2019-01-10"
         }
     ]
 }
