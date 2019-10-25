@@ -287,6 +287,8 @@ components:
           format: uri
         tittel:
           type: string
+        type:
+          type: string
           enum: ["introtekst", "hjelpetekst", "fordypningstekst"]
         artikkel:
           type: string
