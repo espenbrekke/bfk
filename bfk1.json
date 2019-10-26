@@ -20,7 +20,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/2",
                         "navn": "Barnehage og skole",
                         "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/2"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/barnehageogskole.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/3",
@@ -360,6 +360,22 @@
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/barnehageogskole.html",
+            "tittel": "Barnehage og skole",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/11"
+                },
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/12"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
           {
             "id": "http://data.bufdir.no/bfk/kunnskap/12",
             "tittel": "Bekymringsmelding",
@@ -500,5 +516,27 @@
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a24"
         },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/11",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 28",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a28"
+        },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/12",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 29",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a29"
+        }
     ]
 }
