@@ -11,6 +11,8 @@ index["a"]=1
 index["b"]=1
    
 def populateIndex(data):
+    if isinstance(data, basestring):
+         return
     print("populateIndex")
     print(data.keys())
     for key in data:
