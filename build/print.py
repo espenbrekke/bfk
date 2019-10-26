@@ -47,4 +47,4 @@ while i < len(sys.argv):
     print("----------"+arg+"-------------")
 
 for uri in index:
-    print(uri)
+    print(uri+"\n")
