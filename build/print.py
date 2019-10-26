@@ -8,8 +8,8 @@ print 'Argument List:', str(sys.argv)
 index={}
    
 def populateIndex(data):
-    print("populateIndex"+"\n")
-    print(data)
+    print("populateIndex")
+ #   print(data)
     for key in data:
         if isinstance(data, dict):
             item=data[key]
@@ -22,7 +22,7 @@ def populateIndex(data):
             if "id" in item:
                 id=item["id"]
                 index[id]=item
-                print(id+"\n")
+                print("-"+id)
             populateIndex(item)
 
 i = 1
