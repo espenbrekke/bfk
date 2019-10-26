@@ -12,7 +12,7 @@ index["b"]=1
    
 def populateIndex(data):
     print("populateIndex")
- #   print(data)
+    print(data.keys())
     for key in data:
         if isinstance(data, dict):
             item=data[key]
