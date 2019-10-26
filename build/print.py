@@ -18,7 +18,7 @@ i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
     if os.path.isfile(arg):
-      with open('path_to_file/person.json') as f:
+      with open(arg) as f:
         data = json.load(f)
       print(data)
     i += 1
