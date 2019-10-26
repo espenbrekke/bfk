@@ -21,9 +21,7 @@ def populateIndex(data):
         item=data[key]
         if isinstance(item, list):
             populateIndexFromList(item)
-        elif isinstance(item,string):
-            pass
-        elif isinstance(item,dict):
+        elif isinstance(item,collections.Mapping):
             if "id" in item:
                 id=item["id"]
                 index[id]=item
