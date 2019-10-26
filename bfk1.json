@@ -57,7 +57,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/7",
                         "navn": "Stimulering og veiledning",
                         "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/7"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/8",
@@ -288,6 +288,18 @@
                 {
                     "forhold": "bygget på",
                     "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning",
+            "tittel": "Stimulering og veiledning",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/6"
                 }
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
