@@ -1,7 +1,7 @@
 {
     "versjon": "0.1.0",
     "versjonsInformasjon": "Første utgave",
-    "gjelderFra": "2017-11-01",
+    "gjelderFra": "2019-11-01",
     "kunnskapsmodell": {
         "id": "http://data.bufdir.no/bfk/kunnskapsmodell",
         "dimensjoner": [
@@ -13,22 +13,26 @@
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/1",
                         "navn": "Helse",
-                        "definisjon": "Fysisk og psykisk helse."
+                        "definisjon": "Fysisk og psykisk helse",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/1"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/2",
                         "navn": "Barnehage og skole",
-                        "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring."
+                        "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/2"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/3",
                         "navn": "Følelser og uttrykk",
-                        "definisjon": "Følelser og uttrykk handler om barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig."
+                        "definisjon": "Følelser og uttrykk handler om barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/3"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/4",
                         "navn": "Venner og fritid",
-                        "definisjon": "Barnets relasjoner til andre jevnaldrende og fritidsaktiviteter og -interesser."
+                        "definisjon": "Barnets relasjoner til andre jevnaldrende og fritidsaktiviteter og -interesser",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/4"]
                     }                    
                 ]
             },
@@ -40,22 +44,26 @@
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/5",
                         "navn": "Grunnleggende omsorg",
-                        "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner."
+                        "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/5"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/6",
                         "navn": "Følelsmessig tilgjengelighet",
-                        "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår."
+                        "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/6"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/7",
                         "navn": "Stimulering og veiledning",
-                        "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet."                        
+                        "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/7"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/8",
                         "navn": "Beskyttelse",
-                        "definisjon": "Foreldrenes kapasitet til å beskytte barnet mot fysisk og psykisk vold, seksuelle overgrep, å være vitne til vold og ulike former for utnyttelse."
+                        "definisjon": "Foreldrenes kapasitet til å beskytte barnet mot fysisk og psykisk vold, seksuelle overgrep, å være vitne til vold og ulike former for utnyttelse",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/8"]
                     }                    
                 ]
             },
@@ -67,17 +75,20 @@
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/9",
                         "navn": "Familieforhold",
-                        "definisjon": "Sentrale faktorer er familiens sammensetning, slekt og sosiale nettverk, hvem som har den daglige omsorgen for barnet, foreldrenes helse og livsførsel, familieklima, søskens helse og utvikling, relasjon til søsken, familiebakgrunn, tidligere hendelser i familielivet, religion, språk og etnisk bakgrunn, samt særlige kulturelle og holdninger."
+                        "definisjon": "Sentrale faktorer er familiens sammensetning, slekt og sosiale nettverk, hvem som har den daglige omsorgen for barnet, foreldrenes helse og livsførsel, familieklima, søskens helse og utvikling, relasjon til søsken, familiebakgrunn, tidligere hendelser i familielivet, religion, språk og etnisk bakgrunn, samt særlige kulturelle og holdninger",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/9"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/10",
                         "navn": "Bolig, økonomi og arbeid",
-                        "definisjon": "Familiens sosioøkonomiske forhold, foreldrenes tilknytning til arbeidsliv, utdanning og fattigdom."
+                        "definisjon": "Familiens sosioøkonomiske forhold, foreldrenes tilknytning til arbeidsliv, utdanning og fattigdom",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/10"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/11",
                         "navn": "Nettverk og sosial integrering",
-                        "definisjon": "Nettverket utover kjernefamilien; relasjon til slekt og nettverk, grad av integrering i minoritets- og majoritetssamfunn, bolig og nærmiljø, tilgang på hjelp og støtte fra private, frivillige organisasjoner og offentlig nettverk."
+                        "definisjon": "Nettverket utover kjernefamilien; relasjon til slekt og nettverk, grad av integrering i minoritets- og majoritetssamfunn, bolig og nærmiljø, tilgang på hjelp og støtte fra private, frivillige organisasjoner og offentlig nettverk",
+                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/11"]
                     }                    
                 ]
             }
