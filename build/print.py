@@ -14,7 +14,7 @@ def populateIndex(data):
         item=data[key]
         if isinstance(item, list):
             for listItem in item:
-               populateIndexFromList(listItem)
+               populateIndex(listItem)
         elif isinstance(item,dict):
             if "id" in item:
                 id=item["id"]
