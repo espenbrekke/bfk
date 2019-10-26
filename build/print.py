@@ -25,7 +25,7 @@ def populateIndexFromList(aList):
             populateIndexFromList(item)
         elif isinstance(item,dict):
             populateIndex(item)
-
+ 
 i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
