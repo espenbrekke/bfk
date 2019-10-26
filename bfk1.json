@@ -291,6 +291,17 @@
             "type": "lovverk",
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a18"
+        },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/6",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 5",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a5"
         }  
     ]
 }
