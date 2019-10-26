@@ -29,7 +29,10 @@ def populateIndex(data):
 
 def populateIndexFromList(aList):
     for item in aList:
-        populateIndex(item)
+        if isinstance(item, list):
+            populateIndexFromList(item)
+        elif isinstance(item,dict):
+            populateIndex(item)
 
 i = 1
 while i < len(sys.argv):
