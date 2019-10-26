@@ -11,7 +11,10 @@ def populateIndex(data):
     print("populateIndex"+"\n")
     print(data)
     for key in data:
-        item=data[key]
+        if isinstance(item, list):
+            item=key
+        else 
+            item=data[key]
         if isinstance(item, list):
             for listItem in item:
                populateIndex(listItem)
