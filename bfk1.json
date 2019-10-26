@@ -133,66 +133,74 @@
             "kilder": []
         }
     ],
-    "prosesser": [
-        {
-            "id": "http://data.bufdir.no/bfk/prosess/1",
-            "navn": "Bekymringsmelding",
-            "definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
-            "fase": "http://data.bufdir.no/bfk/fase/1",
-            "kunnskap": ["http://data.bufdir.no/bfk/fase/1"],
-            "oppgaver": [
-                {
-                    "id": "http://data.bufdir.no/bfk/oppgave/1",
-                    "navn": "Motta bekymringsmelding",
-                    "definisjon": "Lorum ipsum...",
-                    "spørsmål": "http://data.bufdir.no/bfk/spørsmål/1",
-                    "sjekkliste": [
-                        { 
-                            "navn": "Tidligere meldinger",
-                            "beskrivelse": "ingen, eller et tall"
-                        },
-                        {
-                            "navn": "Tidligere tiltak",
-                            "beskrivelse": "ingen, eller et tall"
-                        },
-                         {
-                            "navn": "Tidligere vedtak",
-                            "beskrivelse": "ingen, eller et tall"
-                        },
-                        {
-                            "navn": "Registrert sak på søsken",
-                            "beskrivelse": "ingen, eller et tall"
-                        }
-                    ],
-                    "kilder": [],
-                    "aktiviteter": []
-                         {
-                    "id": "http://data.bufdir.no/bfk/oppgave/2",
-                    "navn": "Vurdere bekymringsmelding",
-                    "definisjon": "Grunnlaget for vurdering av en bekymringsmelding er; bekymringsmeldingen og eventuelle tidligere registrert informasjon på barnet eller søsken.",
-                    "kunnskapsmodell": "http://data.bufdir.no/bfk/kunnskapsmodell",
-                    "spørsmål": ["http://data.bufdir.no/bfk/spørsmål/2", "http://data.bufdir.no/bfk/spørsmål/3"],
-                    "sjekkliste":[],
-                    "kilder": [],
-                    "aktiviteter": []
-                },
-                 {
-                    "id": "http://data.bufdir.no/bfk/oppgave/3",
-                    "navn": "Konkludere bekymringsmelding",
-                    "definisjon": "En bekymringsmelding kan enten konkluderes med henleggelse eller videre undersøkelse",
-                    "spørsmål": [],
-                    "sjekkliste":[],
-                    "kodeliste": ["http://data.bufdir.no/bfk/kodeliste/1", "http://data.bufdir.no/bfk/kodeliste/2"],
-                    "kilder": [],
-                    "aktiviteter": [
-                        {
-                            "navn": "Sende tilbakemelding til melder",
-                            "definisjon": "Privat melder skal ha tilbakemelding om mottatt bekymringsmelding, offentlig melder skal ha tilbakemelding om konklusjon på bekymringsmelding"
-                        }
-                    ]
-                }
-        }
-    ],
+   "prosesser": [{
+			"id": "http://data.bufdir.no/bfk/prosess/1",
+			"navn": "Bekymringsmelding",
+			"definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
+			"fase": "http://data.bufdir.no/bfk/fase/1",
+			"kunnskap": ["http://data.bufdir.no/bfk/fase/1"]
+		},
+		{
+			"oppgaver": [{
+					"id": "http://data.bufdir.no/bfk/oppgave/1",
+					"navn": "Motta bekymringsmelding",
+					"definisjon": "Lorum ipsum...",
+					"spørsmål": "http://data.bufdir.no/bfk/spørsmål/1",
+					"sjekkliste": [{
+							"navn": "Tidligere meldinger",
+							"beskrivelse": "ingen, eller et tall"
+						},
+						{
+							"navn": "Tidligere tiltak",
+							"beskrivelse": "ingen, eller et tall"
+						},
+						{
+							"navn": "Tidligere vedtak",
+							"beskrivelse": "ingen, eller et tall"
+						},
+						{
+							"navn": "Registrert sak på søsken",
+							"beskrivelse": "ingen, eller et tall"
+						}
+					],
+					"kilder": [],
+					"aktiviteter": []
+				},
+				{
+					"id": "http://data.bufdir.no/bfk/oppgave/2",
+					"navn": "Vurdere bekymringsmelding",
+					"definisjon": "Grunnlaget for vurdering av en bekymringsmelding er; bekymringsmeldingen og eventuelle tidligere registrert informasjon på barnet eller søsken.",
+					"kunnskapsmodell": "http://data.bufdir.no/bfk/kunnskapsmodell",
+					"spørsmål": ["http://data.bufdir.no/bfk/spørsmål/2", "http://data.bufdir.no/bfk/spørsmål/3"],
+					"sjekkliste": [],
+					"kilder": [],
+					"aktiviteter": []
+				},
+
+				{
+					"id": "http://data.bufdir.no/bfk/oppgave/3",
+					"navn": "Konkludere bekymringsmelding",
+					"definisjon": "En bekymringsmelding kan enten konkluderes med henleggelse eller videre undersøkelse",
+					"spørsmål": [],
+					"sjekkliste": [],
+					"kodeliste": ["http://data.bufdir.no/bfk/kodeliste/1", "http://data.bufdir.no/bfk/kodeliste/2"],
+					"kilder": [],
+					"aktiviteter": [{
+						"navn": "Sende tilbakemelding til melder",
+						"definisjon": "Privat melder skal ha tilbakemelding om mottatt bekymringsmelding, offentlig melder skal ha tilbakemelding om konklusjon på bekymringsmelding"
+					}]
+
+				}
+			]
+		}, {
+			"id": "http://data.bufdir.no/bfk/prosess/2",
+			"navn": "Den gode starten på en undersøkelse",
+			"definisjon": "Dette er den første prosessen i undersøkelsesfasen",
+			"fase": "http://data.bufdir.no/bfk/fase/2",
+			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/"]
+		}
+
+	],
     "spørsmål": [
         {
             "id": "http://data.bufdir.no/bfk/spørsmål/1",
