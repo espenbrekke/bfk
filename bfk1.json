@@ -70,13 +70,13 @@
             {
                 "id": "http://data.bufdir.no/bfk/dimensjon/1",
                 "navn": "Familie og miljø",
-                "definisjon": "Dimensjon «familie og miljø» beskriver sosioøkonomiske faktorer av betydning for barnets og familiens levekår.",
+                "definisjon": "Sosioøkonomiske faktorer av betydning for barnets og familiens levekår.",
                 "områder": [
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/9",
                         "navn": "Familieforhold",
                         "definisjon": "Sentrale faktorer er familiens sammensetning, slekt og sosiale nettverk, hvem som har den daglige omsorgen for barnet, foreldrenes helse og livsførsel, familieklima, søskens helse og utvikling, relasjon til søsken, familiebakgrunn, tidligere hendelser i familielivet, religion, språk og etnisk bakgrunn, samt særlige kulturelle og holdninger",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/9"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/familieforhold.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/10",
@@ -88,7 +88,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/11",
                         "navn": "Nettverk og sosial integrering",
                         "definisjon": "Nettverket utover kjernefamilien; relasjon til slekt og nettverk, grad av integrering i minoritets- og majoritetssamfunn, bolig og nærmiljø, tilgang på hjelp og støtte fra private, frivillige organisasjoner og offentlig nettverk",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/11"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/nettverkogsosialintegritet.html"]
                     }                    
                 ]
             }
