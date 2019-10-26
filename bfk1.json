@@ -45,7 +45,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/5",
                         "navn": "Grunnleggende omsorg",
                         "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/5"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/6",
@@ -304,6 +304,22 @@
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg",
+            "tittel": "Grunnleggende omsorg",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/7"
+                },
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/8"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
           {
             "id": "http://data.bufdir.no/bfk/kunnskap/12",
             "tittel": "Bekymringsmelding",
@@ -410,6 +426,17 @@
             "type": "lovverk",
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a27"
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/8",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 31",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a30"
         }  
     ]
 }
