@@ -22,7 +22,7 @@ jobs:
         inputs:
           scriptSource: filePath
           scriptPath: 'build/print.py'
-          #arguments: # Optional
+          arguments: 'a b'
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
