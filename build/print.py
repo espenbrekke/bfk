@@ -25,6 +25,7 @@ def populateIndex(data):
             if "id" in item:
                 id=item["id"]
                 index[id]=item
+                print(id+"\n")
             populateIndex(item)
 
 def populateIndexFromList(aList):
