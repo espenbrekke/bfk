@@ -63,7 +63,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/8",
                         "navn": "Beskyttelse",
                         "definisjon": "Foreldrenes kapasitet til å beskytte barnet mot fysisk og psykisk vold, seksuelle overgrep, å være vitne til vold og ulike former for utnyttelse",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/8"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/beskyttelse.html"]
                     }                    
                 ]
             },
@@ -271,6 +271,13 @@
                     "kilde": "http://data.bufdir.no/bfk/kilde/7"
                 }
             ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	  {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/beskyttelse.html",
+            "tittel": "Beskyttelse",
+            "type": "hjelpetekst",
+             "kilder": [],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
           {
