@@ -9,7 +9,7 @@ index={}
    
 def populateIndex(data):
     print("populateIndex"+"\n")
-    print(data)
+    print(data.encode('utf-8'))
     for key in data:
         if isinstance(data, dict):
             item=data[key]
