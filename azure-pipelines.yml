@@ -11,7 +11,7 @@ jobs:
         inputs:
           scriptSource: filePath
           scriptPath: 'build/print.py'
-          arguments: 'bfk1.json kunnskap.json'
+          arguments: 'bfk1.json'
 #          arguments: 'bfk1.json kodeliste.json kunnskap.json'
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
