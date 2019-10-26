@@ -6,6 +6,9 @@ print 'Number of arguments:', len(sys.argv), 'arguments.'
 print 'Argument List:', str(sys.argv)
 
 index={}
+
+index["a"]=1
+index["b"]=1
    
 def populateIndex(data):
     print("populateIndex")
