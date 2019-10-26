@@ -13,7 +13,7 @@ def populateIndex(data):
     for key in data:
         if isinstance(item, list):
             item=key
-        else 
+        else:
             item=data[key]
         if isinstance(item, list):
             for listItem in item:
