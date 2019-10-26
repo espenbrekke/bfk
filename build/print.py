@@ -28,6 +28,8 @@ def populateIndex(data):
                 id=item["id"]
                 index[id]=item
                 print("-"+id)
+            else:
+               print("-")
             populateIndex(item)
 
 i = 1
