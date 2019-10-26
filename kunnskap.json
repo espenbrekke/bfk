@@ -1,7 +1,7 @@
 {
     "versjon": "0.1.0",
     "versjonsInformasjon": "Første utgave",
-    "gjelderFra": "2019-11-01"
+    "gjelderFra": "2019-11-01",
 
     "kunnskap": [
         {
@@ -17,7 +17,7 @@
             "artikkel": "<p>Barns rett til egnet helsehjelp er nedfelt i [Hjemmel1({Hjemmel1:PublikasjonNavn} {Hjemmel1})].<br />God helse er grunnleggende for barns utvikling og omfatter b&aring;de psykisk og fysisk helse. <br />Fysisk helse handler blant annet om vekst og utvikling, motorikk og fysisk aktivitet, sykdom, eventuelle funksjonsnedsettelser, s&oslash;vn og ern&aelig;ring. <br />Psykisk helse omfatter blant annet utvikling og regulering av f&oslash;lelser, tanker, atferd og sosiale evner, samt evne til selvstendighet, tilknytning og h&aring;ndtering av stress. <br />God fysisk og psykisk helse er av avgj&oslash;rende betydning for all l&aelig;ring og utvikling, og er forbundet med god livskvalitet. Tilsvarende er frav&aelig;r av god helse forbundet med negative virkninger som &oslash;kt risiko for sosial isolasjon, frafall i skolen og utenforskap i arbeidslivet. <br />Helse er et omfattende omr&aring;de og krever samarbeid med eksterne instanser som for eksempel fastlege, tannhelsetjeneste, spesialisthelsetjeneste, helsestasjon osv.</p>"
         }
 
-    ],
+    ]
    
 }
 
