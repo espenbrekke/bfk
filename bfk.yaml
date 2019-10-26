@@ -362,6 +362,8 @@ components:
           format: uri
         tittel: 
           type: string
+        kapittel:
+          type: string
         forfatter:
           type: string
         utgiver: 
