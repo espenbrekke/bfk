@@ -22,7 +22,7 @@ jobs:
         inputs:
           scriptSource: filePath
           scriptPath: 'build/print.py'
-          arguments: 'a b'
+          arguments: 'bfk1.json kodeliste.json kunnskap.json'
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
