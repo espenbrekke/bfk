@@ -14,6 +14,24 @@ while i < len(sys.argv):
       print(arg+" missing")
     i += 1
 
+index={}
+   
+def populateIndex(data):
+    for key in data:
+        item=data[key]
+        if isinstance(item, list):
+            populateIndexFromList(item)
+        else :
+            if "id" in item:
+                id=item["id"]
+                index[id]=item
+            populateIndex(item)
+
+def populateIndexFromList(aList){
+    for item in aList:
+        populateIndex(item)
+}
+
 i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
@@ -22,5 +40,9 @@ while i < len(sys.argv):
       with open(arg) as f:
         data = json.load(f)
       print(data)
+      populateIndex(data)
     i += 1
     print("----------"+arg+"-------------")
+
+for uri in index:
+    print(uri)
