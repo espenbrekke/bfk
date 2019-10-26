@@ -4,15 +4,27 @@
     "gjelderFra": "2019-11-01",
 
     "kunnskap": [
+        {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/familieforhold.html",
+            "tittel": "Familieforhold",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
           {
-            "id": "http://data.bufdir.no/bfk/kunnskap/1",
+            "id": "http://data.bufdir.no/bfk/kunnskap/12",
             "tittel": "Bekymringsmelding",
             "type": "hjelpetekst",
             "arktikkel": "<p>Denne teksten forklarer hvordan kontaktpersoner i barnevernstjenestene skal jobbe på den måten BFK anbefaler</p>
             "emneord": ["http://data.bufdir.no/begrep/bekymringsmelding", "http://data.bufdir.no/begrep/prosess"]            
         },
          {
-            "id": "http://data.bufdir.no/bfk/kunnskap/2",
+            "id": "http://data.bufdir.no/bfk/kunnskap/13",
             "tittel": "Den gode starten på en undersøkelse",
             "type": "hjelpetekst",
             "arktikkel": "<p>Denne teksten forklarer hvordan kontaktpersoner i barnevernstjenestene skal jobbe på den måten BFK anbefaler</p>
