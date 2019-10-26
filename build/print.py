@@ -17,8 +17,10 @@ while i < len(sys.argv):
 i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
+    print("**********"+arg+"************")
     if os.path.isfile(arg):
       with open(arg) as f:
         data = json.load(f)
       print(data)
     i += 1
+    print("----------"+arg+"-------------")
