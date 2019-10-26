@@ -14,25 +14,25 @@
                         "id": "http://data.bufdir.no/bfk/omrode/1",
                         "navn": "Helse",
                         "definisjon": "Fysisk og psykisk helse",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/1"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/helse.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/2",
                         "navn": "Barnehage og skole",
                         "definisjon": "Deltakelse, trivsel og læring på arenaer som barnehage og skole. Herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/2"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/barnehageogskole.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/3",
                         "navn": "Følelser og uttrykk",
-                        "definisjon": "Følelser og uttrykk handler om barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/3"]
+                        "definisjon": "Barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelseroguttrykk.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/4",
                         "navn": "Venner og fritid",
                         "definisjon": "Barnets relasjoner til andre jevnaldrende og fritidsaktiviteter og -interesser",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/4"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/vennerogfritid.html"]
                     }                    
                 ]
             },
@@ -45,25 +45,25 @@
                         "id": "http://data.bufdir.no/bfk/omrode/5",
                         "navn": "Grunnleggende omsorg",
                         "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/5"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/6",
                         "navn": "Følelsmessig tilgjengelighet",
                         "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/6"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/7",
                         "navn": "Stimulering og veiledning",
                         "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/7"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/8",
                         "navn": "Beskyttelse",
                         "definisjon": "Foreldrenes kapasitet til å beskytte barnet mot fysisk og psykisk vold, seksuelle overgrep, å være vitne til vold og ulike former for utnyttelse",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/8"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/beskyttelse.html"]
                     }                    
                 ]
             },
@@ -82,7 +82,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/10",
                         "navn": "Bolig, økonomi og arbeid",
                         "definisjon": "Familiens sosioøkonomiske forhold, foreldrenes tilknytning til arbeidsliv, utdanning og fattigdom",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/10"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/boligokonomiogarbeid.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/11",
@@ -151,7 +151,7 @@
 			"navn": "Bekymringsmelding",
 			"definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
 			"fase": "http://data.bufdir.no/bfk/fase/1",
-			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/12"]
+			"kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/bekymringsmelding.html"]
 		},
 		{
 			"oppgaver": [{
@@ -210,7 +210,7 @@
 			"navn": "Den gode starten på en undersøkelse",
 			"definisjon": "Dette er den første prosessen i undersøkelsesfasen",
 			"fase": "http://data.bufdir.no/bfk/fase/2",
-			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/13"]
+			"kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/dengodestartenpaundersokelse.html"]
 		}
 
 	],
@@ -225,17 +225,171 @@
             "type": "reflekterende",
             "spørsmålstekst": "Hva bekymrer?",
             "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
-            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"]
         },
         {
             "id": "http://data.bufdir.no/bfk/spørsmål/3",
             "type": "reflekterende",
             "spørsmålstekst": "Hvordan kommer dette til uttrykk?",
             "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
-            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"]
         }
     ],
   
+ "kunnskap": [
+        {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/familieforhold.html",
+            "tittel": "Familieforhold",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+        {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/nettverkogsosialintegritet.html",
+            "tittel": "Nettverk og sosial integritet",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/6"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+         {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/boligokonomiogarbeid.html",
+            "tittel": "Bolig, økonomi og arbeid",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/7"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	  {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/beskyttelse.html",
+            "tittel": "Beskyttelse",
+            "type": "hjelpetekst",
+             "kilder": [],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	  {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet.html",
+            "tittel": "Følelsesmessig tilgjengelighet",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning.html",
+            "tittel": "Stimulering og veiledning",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/6"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg.html",
+            "tittel": "Grunnleggende omsorg",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/7"
+                },
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/8"
+                },
+		     {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/9"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/vennerogfritid.html",
+            "tittel": "Venner og fritid",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/8"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	  {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/helse.html",
+            "tittel": "Helse",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/10"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelseroguttrykk.html",
+            "tittel": "Følelser og utrykk",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/barnehageogskole.html",
+            "tittel": "Barnehage og skole",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/11"
+                },
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/12"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+          {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/bekymringsmelding.html",
+            "tittel": "Bekymringsmelding",
+            "type": "hjelpetekst",
+            "emneord": ["http://data.bufdir.no/begrep/bekymringsmelding", "http://data.bufdir.no/begrep/prosess"]            
+        },
+         {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/dengodestartenpaundersokelse.html",
+            "tittel": "Den gode starten på en undersøkelse",
+            "type": "hjelpetekst",
+            "emneord": ["http://data.bufdir.no/begrep/undersøkelse", "http://data.bufdir.no/begrep/prosess"]            
+        }
+    ],
+	
     "kilder": [
         {
             "id": "http://data.bufdir.no/bfk/kilde/1",
@@ -281,6 +435,17 @@
             "opprettet": "1992-07-17",
             "url": "https://lovdata.no/lov/1992-07-17-100/§4-3"
         },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/6",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 5",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a5"
+        },
 	     {
             "id": "http://data.bufdir.no/bfk/kilde/5",
             "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
@@ -292,16 +457,71 @@
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a18"
         },
-	     {
-            "id": "http://data.bufdir.no/bfk/kilde/6",
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/7",
             "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
-	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 5",	
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 27",	
             "forfatter": "",
             "utgiver": "",
             "år": "",
             "type": "lovverk",
             "opprettet": "",
-            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a5"
-        }  
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a27"
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/8",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 31",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a31"
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/9",
+            "tittel": "Barn i risiko : skadelige omsorgssituasjoner",
+	    "kapittel": "Kapittel 7",	
+            "forfatter": "Øyvind Kvello",
+            "utgiver": "Gyldendal",
+            "år": "2015",
+            "type": "metode",
+            "opprettet": "",
+            "url": ""
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/10",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 24",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a24"
+        },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/11",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 28",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a28"
+        },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/12",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 29",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a29"
+        }
     ]
 }
