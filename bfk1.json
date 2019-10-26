@@ -26,7 +26,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/3",
                         "navn": "Følelser og uttrykk",
                         "definisjon": "Barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/3"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelseroguttrykk.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/4",
@@ -344,6 +344,18 @@
 		      {
                     "forhold": "bygget på",
                     "kilde": "http://data.bufdir.no/bfk/kilde/10"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelseroguttrykk.html",
+            "tittel": "Følelser og utrykk",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
                 }
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
