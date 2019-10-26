@@ -13,7 +13,8 @@ def populateIndex(data):
     for key in data:
         item=data[key]
         if isinstance(item, list):
-            populateIndexFromList(item)
+            for listItem in aList:
+               populateIndexFromList(listItem)
         elif isinstance(item,dict):
             if "id" in item:
                 id=item["id"]
@@ -21,14 +22,6 @@ def populateIndex(data):
                 print(id+"\n")
             populateIndex(item)
 
-def populateIndexFromList(aList):
-    print("populateIndexFromList"+"\n")
-    for item in aList:
-        if isinstance(item, list):
-            populateIndexFromList(item)
-        elif isinstance(item,dict):
-            populateIndex(item)
- 
 i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
