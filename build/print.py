@@ -25,8 +25,7 @@ def populateIndex(data):
                populateIndex(listItem)
         elif isinstance(item,dict):
             if "id" in item.keys():
-                id=item["id"]
-                index[id]=item
+                index[item["id"]]=1
                 print("-"+id)
             else:
                print("-")
