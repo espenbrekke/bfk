@@ -8,7 +8,7 @@ print 'Argument List:', str(sys.argv)
 index={}
    
 def populateIndex(data):
-    print("populateIndex"+\n)
+    print("populateIndex"+"\n")
     for key in data:
         item=data[key]
         if isinstance(item, list):
@@ -21,7 +21,7 @@ def populateIndex(data):
             populateIndex(item)
 
 def populateIndexFromList(aList):
-    print("populateIndexFromList"+\n)
+    print("populateIndexFromList"+"\n")
     for item in aList:
         if isinstance(item, list):
             populateIndexFromList(item)
