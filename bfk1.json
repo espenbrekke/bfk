@@ -100,7 +100,7 @@
             "navn": "Bekymringsmelding",
             "definisjon": "Når barneverntjenesten mottar en bekymringsmelding, skal den snarest, og senest innen en uke, avgjøre om meldingen skal gå videre til undersøkelse eller om den skal henlegges",
             "frist": 7,
-            "kunnskap": [""],
+            "kunnskap": [],
             "kilder": [
                 {
                     "forhold": "sitert fra",
@@ -151,13 +151,13 @@
 			"navn": "Bekymringsmelding",
 			"definisjon": "Det er kun én prosess som inngår i fase bekymringsmelding. Den starter med mottak av melding, deretter vurdering av melding, konkludering av melding og avsluttes med et vedtak.",
 			"fase": "http://data.bufdir.no/bfk/fase/1",
-			"kunnskap": ["http://data.bufdir.no/bfk/fase/1"]
+			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/12"]
 		},
 		{
 			"oppgaver": [{
 					"id": "http://data.bufdir.no/bfk/oppgave/1",
 					"navn": "Motta bekymringsmelding",
-					"definisjon": "Lorum ipsum...",
+					"definisjon": "",
 					"spørsmål": "http://data.bufdir.no/bfk/spørsmål/1",
 					"sjekkliste": [{
 							"navn": "Tidligere meldinger",
@@ -210,7 +210,7 @@
 			"navn": "Den gode starten på en undersøkelse",
 			"definisjon": "Dette er den første prosessen i undersøkelsesfasen",
 			"fase": "http://data.bufdir.no/bfk/fase/2",
-			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/"]
+			"kunnskap": ["http://data.bufdir.no/bfk/kunnskap/13"]
 		}
 
 	],
