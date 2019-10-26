@@ -51,7 +51,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/6",
                         "navn": "Følelsmessig tilgjengelighet",
                         "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/6"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/7",
@@ -278,6 +278,18 @@
             "tittel": "Beskyttelse",
             "type": "hjelpetekst",
              "kilder": [],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	  {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet",
+            "tittel": "Følelsesmessig tilgjengelighet",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
           {
