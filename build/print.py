@@ -9,6 +9,7 @@ index={}
    
 def populateIndex(data):
     print("populateIndex"+"\n")
+    print(data)
     for key in data:
         item=data[key]
         if isinstance(item, list):
