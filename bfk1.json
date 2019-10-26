@@ -280,6 +280,17 @@
             "type": "lovverk",
             "opprettet": "1992-07-17",
             "url": "https://lovdata.no/lov/1992-07-17-100/§4-3"
+        },
+	     {
+            "id": "http://data.bufdir.no/bfk/kilde/5",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 18",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a18"
         }  
     ]
 }
