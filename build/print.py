@@ -38,7 +38,8 @@ while i < len(sys.argv):
     print("**********"+arg+"************")
     if os.path.isfile(arg):
       with open(arg) as f:
-        data = json.load(f)
+        raw_data = f.read()
+        data = json.loads(raw_data.decode('utf-8'))
       populateIndex(data)
     i += 1
     print("----------"+arg+"-------------")
