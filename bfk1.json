@@ -25,14 +25,14 @@
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/3",
                         "navn": "Følelser og uttrykk",
-                        "definisjon": "Følelser og uttrykk handler om barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
+                        "definisjon": "Barnets følelser og hvordan barnet agerer på disse. I denne sammenheng forstås \"uttrykk\" i bred forstand; fra kroppsspråk og mimikk til handlinger. Temperament, atferd, holdninger, verdier, empati, identitet og selvstendighet er også viktig",
                         "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/3"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/4",
                         "navn": "Venner og fritid",
                         "definisjon": "Barnets relasjoner til andre jevnaldrende og fritidsaktiviteter og -interesser",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/4"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/vennerogfritid.html"]
                     }                    
                 ]
             },
@@ -45,19 +45,19 @@
                         "id": "http://data.bufdir.no/bfk/omrode/5",
                         "navn": "Grunnleggende omsorg",
                         "definisjon": "Basale behov som mat, søvn, fysisk aktivitet, hygiene, helsebehov og hverdagsrutiner",
-                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/6",
                         "navn": "Følelsmessig tilgjengelighet",
                         "definisjon": "Stabilitet i relasjonen mellom barnet og foreldre, og foreldres evne/kapasitet til å være følelsesmessig tilgjengelige for barnet når et behov oppstår",
-                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/7",
                         "navn": "Stimulering og veiledning",
                         "definisjon": "Barnets behov for stimulering og veiledning fra foreldre vil ta ulik form jo eldre barnet blir. Samspill mellom foreldre og et barn, stimulering av lek og sosialt samvær med andre barn, grensesetting og respekt for barnets integritet",
-                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/8",
@@ -281,7 +281,7 @@
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
 	  {
-            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet",
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/folelsesmessigtilgjengelighet.html",
             "tittel": "Følelsesmessig tilgjengelighet",
             "type": "hjelpetekst",
              "kilder": [
@@ -293,7 +293,7 @@
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
 	 {
-            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning",
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/stimuleringogveiledning.html",
             "tittel": "Stimulering og veiledning",
             "type": "hjelpetekst",
              "kilder": [
@@ -305,7 +305,7 @@
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
         },
 	 {
-            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg",
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/grunnleggendeomsorg.html",
             "tittel": "Grunnleggende omsorg",
             "type": "hjelpetekst",
              "kilder": [
@@ -320,6 +320,18 @@
 		     {
                     "forhold": "bygget på",
                     "kilde": "http://data.bufdir.no/bfk/kilde/9"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+	 {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/vennerogfritid.html",
+            "tittel": "Venner og fritid",
+            "type": "hjelpetekst",
+             "kilder": [
+		      {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/8"
                 }
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
