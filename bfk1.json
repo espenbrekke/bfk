@@ -225,14 +225,14 @@
             "type": "reflekterende",
             "spørsmålstekst": "Hva bekymrer?",
             "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
-            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"]
         },
         {
             "id": "http://data.bufdir.no/bfk/spørsmål/3",
             "type": "reflekterende",
             "spørsmålstekst": "Hvordan kommer dette til uttrykk?",
             "dimensjon": ["http://data.bufdir.no/bfk/dimensjon/1", "http://data.bufdir.no/bfk/dimensjon/2", "http://data.bufdir.no/bfk/dimensjon/1"],
-            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"],
+            "områder": ["http://data.bufdir.no/bfk/omrode/1", "http://data.bufdir.no/bfk/omrode/2", "http://data.bufdir.no/bfk/omrode/3", "http://data.bufdir.no/bfk/omrode/4", "http://data.bufdir.no/bfk/omrode/5", "http://data.bufdir.no/bfk/omrode/6", "http://data.bufdir.no/bfk/omrode/7", "http://data.bufdir.no/bfk/omrode/8", "http://data.bufdir.no/bfk/omrode/9", "http://data.bufdir.no/bfk/omrode/10", "http://data.bufdir.no/bfk/omrode/11"]
         }
     ],
   
@@ -387,7 +387,7 @@
             "tittel": "Den gode starten på en undersøkelse",
             "type": "hjelpetekst",
             "emneord": ["http://data.bufdir.no/begrep/undersøkelse", "http://data.bufdir.no/begrep/prosess"]            
-        },
+        }
     ],
 	
     "kilder": [
