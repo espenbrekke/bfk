@@ -316,6 +316,10 @@
 		      {
                     "forhold": "bygget på",
                     "kilde": "http://data.bufdir.no/bfk/kilde/8"
+                },
+		     {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/9"
                 }
             ],
             "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
@@ -437,6 +441,17 @@
             "type": "lovverk",
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a30"
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/9",
+            "tittel": "Barn i risiko : skadelige omsorgssituasjoner",
+	    "kapittel": "Kapittel 7",	
+            "forfatter": "Øyvind Kvello",
+            "utgiver": "Gyldendal",
+            "år": "2015",
+            "type": "metode",
+            "opprettet": "",
+            "url": ""
         }  
     ]
 }
