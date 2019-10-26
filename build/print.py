@@ -7,8 +7,8 @@ print 'Argument List:', str(sys.argv)
 i = 1
 while i < len(sys.argv):
     arg=sys.argv[i]
-    os.path.isfile(arg)
+    if os.path.isfile(arg):
       print(arg+" exists")
-    else 
+    else: 
       print(arg+" missing")
     i += 1
