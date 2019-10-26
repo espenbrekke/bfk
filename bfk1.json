@@ -105,23 +105,36 @@
                 {
                     "forhold": "sitert fra",
                     "kilde": "http://data.bufdir.no/bfk/kilde/1"
+                },
+		{
+                    "forhold": "gjengitt",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/3"
                 }
             ]
         },
         {
             "id": "http://data.bufdir.no/bfk/fase/2",
             "navn": "Undersøkelse",
-            "definisjon": "",
+            "definisjon": "En melding som inneholder opplysninger som gir rimelig grunn til å anta at det er grunnlag for tiltak etter barnevernloven skal snarest undersøkes nærmere av barneverntjenesten, jf. barnevernloven § 4-3 første ledd. Undersøkelsen skal kartlegge barnets hjelpe- og omsorgsbehov, og gi barneverntjenesten grunnlag for å vurdere om barnet har behov for tiltak etter barnevernloven",
             "frist": 90,
-            "kunnskap": [""],
-            "kilder": []
+            "kunnskap": [],
+            "kilder": [
+                {
+                    "forhold": "sitert fra",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/2"
+                },
+		{
+                    "forhold": "gjengitt",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/4"
+                }
+            ]
         },
         {
             "id": "http://data.bufdir.no/bfk/fase/3",
             "navn": "Tiltak",
             "definisjon": "",
             "frist": "",
-            "kunnskap": [""],
+            "kunnskap": [],
             "kilder": []
         },
         {
@@ -129,7 +142,7 @@
             "navn": "Evaluering",
             "definisjon": "",
             "frist": "",
-            "kunnskap": [""],
+            "kunnskap": [],
             "kilder": []
         }
     ],
@@ -227,12 +240,46 @@
         {
             "id": "http://data.bufdir.no/bfk/kilde/1",
             "tittel": "Saksbehandlingsrundskrivet",
+	    "kapittel": "4 Meldinger til barneverntjenesten",
             "forfatter": "",
             "utgiver": "Bufdir",
             "år": "",
             "type": "veileder",
             "opprettet": "2019-01-10",
-            "url": "https://www.bufdir.no/Barnevern/Fagstotte/saksbehandlingsrundskrivet/"
-        }
+            "url": "https://www.bufdir.no/Barnevern/Fagstotte/saksbehandlingsrundskrivet/#82"
+        },
+	      {
+            "id": "http://data.bufdir.no/bfk/kilde/2",
+            "tittel": "Saksbehandlingsrundskrivet",
+	    "kapittel": "5 Barneverntjenestens undersøkelse",
+            "forfatter": "",
+            "utgiver": "Bufdir",
+            "år": "",
+            "type": "veileder",
+            "opprettet": "2019-01-10",
+            "url": "https://www.bufdir.no/Barnevern/Fagstotte/saksbehandlingsrundskrivet/#90"
+        },
+	   {
+            "id": "http://data.bufdir.no/bfk/kilde/3",
+            "tittel": "Lov om barneverntjenester (barnevernloven)",
+	    "kapittel": "§ 4-2 Meldinger til barneverntjenesten",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "1992-07-17",
+            "url": "https://lovdata.no/lov/1992-07-17-100/§4-2"
+        },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/4",
+            "tittel": "Lov om barneverntjenester (barnevernloven)",
+	    "kapittel": "§ 4-3 Rett og plikt for barneverntjenesten til å foreta undersøkelser.",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "1992-07-17",
+            "url": "https://lovdata.no/lov/1992-07-17-100/§4-3"
+        }  
     ]
 }
