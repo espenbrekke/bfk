@@ -27,10 +27,9 @@ def populateIndex(data):
                 index[id]=item
             populateIndex(item)
 
-def populateIndexFromList(aList){
+def populateIndexFromList(aList):
     for item in aList:
         populateIndex(item)
-}
 
 i = 1
 while i < len(sys.argv):
