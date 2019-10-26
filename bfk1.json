@@ -82,7 +82,7 @@
                         "id": "http://data.bufdir.no/bfk/omrode/10",
                         "navn": "Bolig, økonomi og arbeid",
                         "definisjon": "Familiens sosioøkonomiske forhold, foreldrenes tilknytning til arbeidsliv, utdanning og fattigdom",
-                        "kunnskap": ["http://data.bufdir.no/bfk/kunnskap/10"]
+                        "kunnskap": ["https://github.com/martebrekke/bfk/blob/master/kunnskap/boligokonomiogarbeid.html"]
                     },
                     {
                         "id": "http://data.bufdir.no/bfk/omrode/11",
@@ -236,6 +236,72 @@
         }
     ],
   
+ "kunnskap": [
+        {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/familieforhold.html",
+            "tittel": "Familieforhold",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/5"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+        {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/nettverkogsosialintegritet.html",
+            "tittel": "Nettverk og sosial integritet",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/6"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+         {
+            "id": "https://github.com/martebrekke/bfk/blob/master/kunnskap/boligokonomiogarbeid.html",
+            "tittel": "Bolig, økonomi og arbeid",
+            "type": "hjelpetekst",
+             "kilder": [
+                {
+                    "forhold": "bygget på",
+                    "kilde": "http://data.bufdir.no/bfk/kilde/7"
+                }
+            ],
+            "emneord": ["http://data.bufdir.no/begrep/kunnskapsmodell"]            
+        },
+          {
+            "id": "http://data.bufdir.no/bfk/kunnskap/12",
+            "tittel": "Bekymringsmelding",
+            "type": "hjelpetekst",
+            "arktikkel": "<p>Denne teksten forklarer hvordan kontaktpersoner i barnevernstjenestene skal jobbe på den måten BFK anbefaler</p>
+            "emneord": ["http://data.bufdir.no/begrep/bekymringsmelding", "http://data.bufdir.no/begrep/prosess"]            
+        },
+         {
+            "id": "http://data.bufdir.no/bfk/kunnskap/13",
+            "tittel": "Den gode starten på en undersøkelse",
+            "type": "hjelpetekst",
+            "arktikkel": "<p>Denne teksten forklarer hvordan kontaktpersoner i barnevernstjenestene skal jobbe på den måten BFK anbefaler</p>
+            "emneord": ["http://data.bufdir.no/begrep/undersøkelse", "http://data.bufdir.no/begrep/prosess"]            
+        },
+        {
+            "id": "http://data.bufdir.no/bfk/kunnskap/",
+            "tittel": "Barnehage og skole",
+            "type": "introtekst",
+            "arktikkel": "<p>En vesentlig del av barns utvikling handler om læring, og barnehage og skole er to viktige arenaer for dette. Læring i denne sammenheng handler om alt fra de minste barnas læring av basale funksjoner som å gå, snakke osv., til lek og læring i barnehagen og mer formalisert læring i skolen.</p> <p>I følge barnekonvensjonen artikkel 28 og 29 har barn rett til utdanning. Utdanningen skal fremme barnets personlighet, og teoretiske og praktiske ferdigheter.</p><p>Deltakelse, trivsel og læring på arenaer i barnehage og skole er viktig for barns utvikling. Barnehagen kan ha en beskyttende virkning og en positiv virkning på barns sosiale kompetanse og kognitive evner. Relasjonen mellom de voksne i barnehagen og barnet, kan ha en positiv virkning på barnas atferd og skolemodenhet.</p><p>Skolen er essensiell for læring, men kan også ha en viktig sosial funksjon. Det betyr at skolen generelt representerer en viktig beskyttelsesfaktor. Gjennomføring av skolegang og gode skoleprestasjoner gir gode forutsetninger for voksenlivet. Det er flere faktorer som påvirker barns læring og skolegang, herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring</p>",
+            "emneord": ["bufdir:begrep:barnehage", "bufdir:begrep:skole" ]            
+        },
+        {
+            "id":"bfk:kunnskap:10",
+            "type": "Hjelpetekst",
+            "artikkel": "<p>Barns rett til egnet helsehjelp er nedfelt i [Hjemmel1({Hjemmel1:PublikasjonNavn} {Hjemmel1})].<br />God helse er grunnleggende for barns utvikling og omfatter b&aring;de psykisk og fysisk helse. <br />Fysisk helse handler blant annet om vekst og utvikling, motorikk og fysisk aktivitet, sykdom, eventuelle funksjonsnedsettelser, s&oslash;vn og ern&aelig;ring. <br />Psykisk helse omfatter blant annet utvikling og regulering av f&oslash;lelser, tanker, atferd og sosiale evner, samt evne til selvstendighet, tilknytning og h&aring;ndtering av stress. <br />God fysisk og psykisk helse er av avgj&oslash;rende betydning for all l&aelig;ring og utvikling, og er forbundet med god livskvalitet. Tilsvarende er frav&aelig;r av god helse forbundet med negative virkninger som &oslash;kt risiko for sosial isolasjon, frafall i skolen og utenforskap i arbeidslivet. <br />Helse er et omfattende omr&aring;de og krever samarbeid med eksterne instanser som for eksempel fastlege, tannhelsetjeneste, spesialisthelsetjeneste, helsestasjon osv.</p>"
+        }
+
+    ],
+	
     "kilder": [
         {
             "id": "http://data.bufdir.no/bfk/kilde/1",
@@ -281,6 +347,17 @@
             "opprettet": "1992-07-17",
             "url": "https://lovdata.no/lov/1992-07-17-100/§4-3"
         },
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/6",
+            "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 5",	
+            "forfatter": "",
+            "utgiver": "",
+            "år": "",
+            "type": "lovverk",
+            "opprettet": "",
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a5"
+        },
 	     {
             "id": "http://data.bufdir.no/bfk/kilde/5",
             "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
@@ -292,16 +369,16 @@
             "opprettet": "",
             "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a18"
         },
-	     {
-            "id": "http://data.bufdir.no/bfk/kilde/6",
+	    {
+            "id": "http://data.bufdir.no/bfk/kilde/7",
             "tittel": "Lov om styrking av menneskerettighetenes stilling i norsk rett (menneskerettsloven)",
-	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 5",	
+	    "kapittel": "FNs konvensjon om barnets rettigheter av 20. november 1989, art. 27",	
             "forfatter": "",
             "utgiver": "",
             "år": "",
             "type": "lovverk",
             "opprettet": "",
-            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a5"
+            "url": "https://lovdata.no/lov/1999-05-21-30/bkn/a27"
         }  
     ]
 }
