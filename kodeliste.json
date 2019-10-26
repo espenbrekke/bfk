@@ -1,0 +1,22 @@
+{
+    "versjon": "0.1.0",
+    "versjonsInformasjon": "Første utgave",
+    "gjelderFra": "2019-11-01",
+
+    "kunnskap": [
+        {
+            "id": "bfk:kunnskap:01",
+            "tittel": "Barnehage og skole",
+            "type": "introtekst",
+            "arktikkel": "<p>En vesentlig del av barns utvikling handler om læring, og barnehage og skole er to viktige arenaer for dette. Læring i denne sammenheng handler om alt fra de minste barnas læring av basale funksjoner som å gå, snakke osv., til lek og læring i barnehagen og mer formalisert læring i skolen.</p> <p>I følge barnekonvensjonen artikkel 28 og 29 har barn rett til utdanning. Utdanningen skal fremme barnets personlighet, og teoretiske og praktiske ferdigheter.</p><p>Deltakelse, trivsel og læring på arenaer i barnehage og skole er viktig for barns utvikling. Barnehagen kan ha en beskyttende virkning og en positiv virkning på barns sosiale kompetanse og kognitive evner. Relasjonen mellom de voksne i barnehagen og barnet, kan ha en positiv virkning på barnas atferd og skolemodenhet.</p><p>Skolen er essensiell for læring, men kan også ha en viktig sosial funksjon. Det betyr at skolen generelt representerer en viktig beskyttelsesfaktor. Gjennomføring av skolegang og gode skoleprestasjoner gir gode forutsetninger for voksenlivet. Det er flere faktorer som påvirker barns læring og skolegang, herunder læringsevner/vansker, læringsmiljø, støtte, forventninger, motivasjon og skolevegring</p>",
+            "emneord": ["bufdir:begrep:barnehage", "bufdir:begrep:skole" ]            
+        },
+        {
+            "id":"bfk:kunnskap:10",
+            "type": "Hjelpetekst",
+            "artikkel": "<p>Barns rett til egnet helsehjelp er nedfelt i [Hjemmel1({Hjemmel1:PublikasjonNavn} {Hjemmel1})].<br />God helse er grunnleggende for barns utvikling og omfatter b&aring;de psykisk og fysisk helse. <br />Fysisk helse handler blant annet om vekst og utvikling, motorikk og fysisk aktivitet, sykdom, eventuelle funksjonsnedsettelser, s&oslash;vn og ern&aelig;ring. <br />Psykisk helse omfatter blant annet utvikling og regulering av f&oslash;lelser, tanker, atferd og sosiale evner, samt evne til selvstendighet, tilknytning og h&aring;ndtering av stress. <br />God fysisk og psykisk helse er av avgj&oslash;rende betydning for all l&aelig;ring og utvikling, og er forbundet med god livskvalitet. Tilsvarende er frav&aelig;r av god helse forbundet med negative virkninger som &oslash;kt risiko for sosial isolasjon, frafall i skolen og utenforskap i arbeidslivet. <br />Helse er et omfattende omr&aring;de og krever samarbeid med eksterne instanser som for eksempel fastlege, tannhelsetjeneste, spesialisthelsetjeneste, helsestasjon osv.</p>"
+        }
+
+    ]
+   
+}
