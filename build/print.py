@@ -33,7 +33,6 @@ while i < len(sys.argv):
     if os.path.isfile(arg):
       with open(arg) as f:
         data = json.load(f)
-      print(data)
       populateIndex(data)
     i += 1
     print("----------"+arg+"-------------")
