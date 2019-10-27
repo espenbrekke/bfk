@@ -1,0 +1,40 @@
+trigger:
+  - master
+
+jobs:
+  - job: 'Restructure'
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: '3.x' 
+          addToPath: true 
+          #architecture: 'x64' # Options: x86, x64 (this argument applies only on Windows agents)
+      - task: PythonScript@0
+        displayName: Print a message
+        inputs:
+          scriptSource: filePath
+          scriptPath: 'build/print.py'
+          arguments: 'bfk1.json'
+#          arguments: 'bfk1.json kodeliste.json kunnskap.json'
+          #pythonInterpreter: # Optional
+          #workingDirectory: # Optional
+          #failOnStderr: false # Optional
+      - task: Bash@3
+        inputs:
+          targetType: inline
+          script: 'ls -all'
+      - task: Bash@3
+        inputs:
+          targetType: inline
+          script: 'pwd'
+      - task: CopyFiles@2
+        inputs:
+          SourceFolder: '__out'
+          contents: '**'
+          targetFolder: $(Build.ArtifactStagingDirectory)
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: $(Build.ArtifactStagingDirectory)
+          artifactName: MyBuildOutputs
