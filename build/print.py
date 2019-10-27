@@ -22,7 +22,7 @@ def writeJson(id, data):
       os.makedirs(targetDir)
    with open(targetFile, 'w') as outfile:
       niceString=json.dumps(data, indent=4, sort_keys=True)
-      outfile.write(niceString, outfile)
+      outfile.write(niceString)
    return fullId
       
 index={}
