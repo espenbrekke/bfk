@@ -14,7 +14,11 @@ def writeJson(id, json):
    if not fullId.startswith("http://"):
       fullId=fullId
    json["id"]=fullId
-   with open("out/"+relId, 'w') as outfile:
+   targetFile="out/"+relId
+   targetDir=targetFile.split('\\')[:-1]
+   if not os.path.exists(targetDir):
+      os.makedirs(targetDir)
+   with open(targetFile, 'w') as outfile:
       json.dump(json, outfile)
       
 index={}
