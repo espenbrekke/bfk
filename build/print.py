@@ -20,7 +20,7 @@ def writeJson(id, data):
    targetDir="/".join(targetFile.split('/')[:-1])
    if not os.path.exists(targetDir):
       os.makedirs(targetDir)
-   niceString=json.dumps(data, indent=4, sort_keys=True))
+   niceString=json.dumps(data, indent=4, sort_keys=True)
    with open(targetFile, 'w') as outfile:
       print(niceString, outfile)
    return fullId
