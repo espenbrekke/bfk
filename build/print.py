@@ -11,7 +11,7 @@ newBase="http://data.bufdir.no/bfk2/"
 def writeJson(id, json):
    relId=id.replace(base,"");
    fullId=relId
-   if not fullId.startswith(http://):
+   if not fullId.startswith("http://"):
       fullId=fullId
    json["id"]=fullId
    with open("out/"+relId, 'w') as outfile:
