@@ -6,7 +6,7 @@ print("Number of arguments:"+ str(len(sys.argv))+ "arguments.")
 print("Argument List:"+ str(sys.argv))
 
 base="http://data.bufdir.no/bfk/"
-newBase="http://data.bufdir.no/bfk2/"
+newBase="http://data.bufdir.no/bfk/"
 
 def writeJson(id, data):
    relId=id.replace(base,"");
@@ -24,10 +24,8 @@ def writeJson(id, data):
       niceString=json.dumps(data, indent=4, sort_keys=True)
       outfile.write(niceString)
    return fullId
-      
-index={}
 
-def populateIndex(data):
+def splitJson(data):
    id="";
    if isinstance(data, dict):
       result={}
@@ -35,16 +33,15 @@ def populateIndex(data):
          value=data[key]
          if key=="id":
             id=value
-         result[key]=populateIndex(value)
+         result[key]=splitJson(value)
       if(id != ""):
          newId=writeJson(id, result)
-         index[id]=result
          return newId
       return result
    elif  isinstance(data, list):
       result=[]
       for value in data:
-         result.append(populateIndex(value))
+         result.append(splitJson(value))
       return result
    return data
 
@@ -55,10 +52,7 @@ while i < len(sys.argv):
     if os.path.isfile(arg):
       with open(arg) as f:
         data = json.load(f)
-      populateIndex(data)
+      splitJson(data)
     i += 1
     print("----------"+arg+"-------------")
 
-for uri in index:
-    print(uri+":\n")
-    print(index[uri])
