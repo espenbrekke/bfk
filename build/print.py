@@ -7,7 +7,7 @@ print 'Argument List:', str(sys.argv)
 
 index={}
    
-populateIndex2(data):
+def populateIndex2(data):
    id="";
    if isinstance(data, basestring):
       return
