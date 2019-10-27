@@ -21,6 +21,10 @@ jobs:
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
+      - task: Bash@3
+        inputs:
+          targetType: inline
+          script: 'ls -all'
       - task: CopyFiles@2
         inputs:
           SourceFolder: '_out'
