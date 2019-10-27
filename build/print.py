@@ -7,7 +7,7 @@ print 'Argument List:', str(sys.argv)
 
 index={}
    
-def populateIndex2(data):
+def populateIndex(data):
    id="";
    if isinstance(data, basestring):
       return
@@ -15,8 +15,10 @@ def populateIndex2(data):
       result={}
       for key in data:
          value=data[key]
+         print(key)
          if key=="id":
-             id=value
+            print("its id")
+            id=value
          result[key]=value
       if(id != ""):
          index[id]=result
@@ -28,28 +30,6 @@ def populateIndex2(data):
          result.append(populateIndex2(value))
       return result
    return data
-   
-def populateIndex(data):
-    if isinstance(data, basestring):
-         return
-    print("populateIndex")
-    print(data.keys())
-    for key in data:
-        if isinstance(data, dict):
-            item=data[key]
-        else:
-            item=key
-        if isinstance(item, list):
-            for listItem in item:
-               populateIndex(listItem)
-        elif isinstance(item,dict):
-            if 'id' in item.keys():
-               id=item["id"]
-               index[id]=1
-               print("-"+id)
-            else:
-               print("-")
-            populateIndex(item)
 
 i = 1
 while i < len(sys.argv):
@@ -59,7 +39,7 @@ while i < len(sys.argv):
       with open(arg) as f:
         raw_data = f.read()
         data = json.loads(raw_data.decode('utf-8'))
-      populateIndex2(data)
+      populateIndex(data)
     i += 1
     print("----------"+arg+"-------------")
 
