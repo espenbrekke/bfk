@@ -5,8 +5,8 @@ import json
 print("Number of arguments:"+ str(len(sys.argv))+ "arguments.")
 print("Argument List:"+ str(sys.argv))
 
-base="http://data.bufdir.no/bfk/"
-newBase="http://data.bufdir.no/bfk/"
+base="http://data.bufdir.no/"
+newBase="http://data.bufdir.no/"
 
 def writeJson(id, data):
    relId=id.replace(base,"");
