@@ -21,5 +21,4 @@ jobs:
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
-      - publish: out/
-        artifact: **.*
+      - publish: out/**.*
