@@ -6,7 +6,7 @@ print("Number of arguments:"+ str(len(sys.argv))+ "arguments.")
 print("Argument List:"+ str(sys.argv))
 
 index={}
-   
+
 def populateIndex(data):
    id="";
    if isinstance(data, dict):
@@ -17,7 +17,7 @@ def populateIndex(data):
          if key=="id":
             print("its id")
             id=value
-         result[key]=value
+         result[key]=populateIndex(value)
       if(id != ""):
          index[id]=result
          return id
@@ -25,7 +25,7 @@ def populateIndex(data):
    elif  isinstance(data, list):
       result=[]
       for value in data:
-         result.append(populateIndex2(value))
+         result.append(populateIndex(value))
       return result
    return data
 
