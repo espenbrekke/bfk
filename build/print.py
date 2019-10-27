@@ -6,9 +6,28 @@ print 'Number of arguments:', len(sys.argv), 'arguments.'
 print 'Argument List:', str(sys.argv)
 
 index={}
-
-index["a"]=1
-index["b"]=1
+   
+populateIndex2(data):
+   id="";
+   if isinstance(data, basestring):
+      return
+   if isinstance(data, dict):
+      result={}
+      for key in data:
+         value=data[key]
+         if key=="id":
+             id=value
+         result[key]=value
+      if(id != ""):
+         index[id]=result
+         return id
+      return result
+   elif  isinstance(data, list):
+      result=[]
+      for value in data:
+         result.append(populateIndex2(value))
+      return result
+   return data
    
 def populateIndex(data):
     if isinstance(data, basestring):
@@ -40,7 +59,7 @@ while i < len(sys.argv):
       with open(arg) as f:
         raw_data = f.read()
         data = json.loads(raw_data.decode('utf-8'))
-      populateIndex(data)
+      populateIndex2(data)
     i += 1
     print("----------"+arg+"-------------")
 
