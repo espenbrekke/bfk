@@ -13,9 +13,7 @@ def populateIndex(data):
       result={}
       for key in data:
          value=data[key]
-         print(key)
          if key=="id":
-            print("its id")
             id=value
          result[key]=populateIndex(value)
       if(id != ""):
@@ -41,4 +39,5 @@ while i < len(sys.argv):
     print("----------"+arg+"-------------")
 
 for uri in index:
-    print(uri+"\n")
+    print(uri+":\n")
+    print(index[uri])
