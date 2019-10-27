@@ -23,7 +23,8 @@ jobs:
           #failOnStderr: false # Optional
       - task: CopyFiles@2
         inputs:
-          contents: '__out/**'
+          SourceFolder: '_out'
+          contents: '**'
           targetFolder: $(Build.ArtifactStagingDirectory)
       - task: PublishBuildArtifacts@1
         inputs:
