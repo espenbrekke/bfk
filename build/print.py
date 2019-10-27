@@ -21,7 +21,7 @@ def writeJson(id, data):
    if not os.path.exists(targetDir):
       os.makedirs(targetDir)
    with open(targetFile, 'w') as outfile:
-      json.dump(data, outfile)
+      json.dump(data, outfile, indent=4, sort_keys=True))
    return fullId
       
 index={}
