@@ -64,7 +64,7 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/Prosess"
-        spørsmål:
+        sporsmal:
           type: array
           items:
             $ref: "#/components/schemas/Spørsmål"
@@ -113,11 +113,11 @@ components:
         beskrivelse:
           type: string
           contentMediaType: text/html
-        områder: 
+        omrader: 
           type: array
           items: 
             $ref: "#/components/schemas/Område"          
-    Område:
+    Omrade:
       type: object
       required:
         - id
@@ -142,12 +142,12 @@ components:
           items: 
             type: string
             format: uri-reference
-        spørsmål: 
+        sporsmal: 
           type: array
           items: 
             type: string
             format: uri-reference       
-    Spørsmål:
+    Sporsmal:
       type: object
       properties:
         id:
@@ -156,7 +156,7 @@ components:
         type:
           type: string
           enum: ["reflekterende", "generelt"]
-        spørsmålstekst:
+        sporsmalstekst:
           type: string
           contentMediaType: text/html
         dimensjoner:
@@ -164,7 +164,7 @@ components:
           items: 
             type: string
             format: uri-reference 
-        områder:
+        omrader:
           type: array
           items: 
             type: string
@@ -275,12 +275,7 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/SjekklisteElement"
-        spørsmål:
-          type: array
-          items: 
-            type: string
-            format: uri-reference
-        kodeliste:
+        sporsmal:
           type: array
           items: 
             type: string
@@ -371,7 +366,7 @@ components:
         url:
           type: string
           format: uri-reference
-        år:
+        ar:
           type: integer      
           description: Utgivelsesår
         type:
