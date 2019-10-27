@@ -31,6 +31,10 @@ jobs:
           script: 'pwd'
       - task: CopyFiles@2
         inputs:
+          contents: '**.html'
+          targetFolder: $(Build.ArtifactStagingDirectory)
+      - task: CopyFiles@2
+        inputs:
           SourceFolder: '__out'
           contents: '**'
           targetFolder: $(Build.ArtifactStagingDirectory)
