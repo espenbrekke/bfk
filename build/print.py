@@ -5,6 +5,18 @@ import json
 print("Number of arguments:"+ str(len(sys.argv))+ "arguments.")
 print("Argument List:"+ str(sys.argv))
 
+base="http://data.bufdir.no/bfk/"
+newBase="http://data.bufdir.no/bfk2/"
+
+def writeJson(id, json):
+   relId=id.replace(base,"");
+   fullId=relId
+   if !fullId.startswith(http://):
+      fullId=fullId
+   json["id"]=fullId
+   with open("out/"+relId, 'w') as outfile:
+      json.dump(json, outfile)
+      
 index={}
 
 def populateIndex(data):
@@ -17,6 +29,7 @@ def populateIndex(data):
             id=value
          result[key]=populateIndex(value)
       if(id != ""):
+         writeJson(result)
          index[id]=result
          return id
       return result
