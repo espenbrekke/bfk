@@ -2,7 +2,7 @@ import sys
 import os
 import json
 
-print("Number of arguments:"+ len(sys.argv)+ "arguments.")
+print("Number of arguments:"+ str(len(sys.argv))+ "arguments.")
 print("Argument List:"+ str(sys.argv))
 
 index={}
