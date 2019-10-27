@@ -1,5 +1,6 @@
 trigger:
   - master
+  - pipeline
 
 jobs:
   - job: 'Restructure'
@@ -29,6 +30,10 @@ jobs:
         inputs:
           targetType: inline
           script: 'pwd'
+      - task: CopyFiles@2
+        inputs:
+          contents: '**/*.html'
+          targetFolder: $(Build.ArtifactStagingDirectory)
       - task: CopyFiles@2
         inputs:
           SourceFolder: '__out'
