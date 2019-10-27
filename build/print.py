@@ -15,7 +15,7 @@ def writeJson(id, json):
       fullId=fullId
    json["id"]=fullId
    targetFile="out/"+relId
-   targetDir=targetFile.split('\\')[:-1]
+   targetDir="/".join(targetFile.split('/')[:-1])
    if not os.path.exists(targetDir):
       os.makedirs(targetDir)
    with open(targetFile, 'w') as outfile:
