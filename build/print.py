@@ -29,7 +29,7 @@ def populateIndex(data):
             id=value
          result[key]=populateIndex(value)
       if(id != ""):
-         writeJson(result)
+         writeJson(id, result)
          index[id]=result
          return id
       return result
