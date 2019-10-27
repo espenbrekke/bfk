@@ -8,7 +8,7 @@ print("Argument List:"+ str(sys.argv))
 base="http://data.bufdir.no/bfk/"
 newBase="http://data.bufdir.no/bfk2/"
 
-def writeJson(id, json):
+def writeJson(id, data):
    relId=id.replace(base,"");
    fullId=relId
    if not fullId.startswith("http://"):
@@ -19,7 +19,7 @@ def writeJson(id, json):
    if not os.path.exists(targetDir):
       os.makedirs(targetDir)
    with open(targetFile, 'w') as outfile:
-      json.dump(json, outfile)
+      json.dump(data, outfile)
       
 index={}
 
