@@ -9,8 +9,6 @@ index={}
    
 def populateIndex(data):
    id="";
-   if isinstance(data, basestring):
-      return
    if isinstance(data, dict):
       result={}
       for key in data:
