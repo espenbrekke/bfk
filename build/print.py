@@ -13,7 +13,7 @@ def writeJson(id, data):
    fullId=relId
    if not fullId.startswith("http://"):
       fullId=fullId
-   json["id"]=fullId
+   data["id"]=fullId
    targetFile="out/"+relId
    targetDir="/".join(targetFile.split('/')[:-1])
    if not os.path.exists(targetDir):
