@@ -21,4 +21,5 @@ jobs:
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
-      - publish: out/**.*
+      - publish: $(System.DefaultWorkingDirectory)/out/**.*
+        artifact: WebApp
