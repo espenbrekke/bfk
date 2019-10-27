@@ -10,10 +10,11 @@ newBase="http://data.bufdir.no/bfk2/"
 
 def writeJson(id, data):
    relId=id.replace(base,"");
-   fullId=relId
+   if not id.endswith(".json")
+      relId=relId+".json"
    if relId.startswith("http"):
-      return
-   fullId=newBase+fullId
+      return id
+   fullId=newBase+relId
    data["id"]=fullId
    targetFile="__out/"+relId
    targetDir="/".join(targetFile.split('/')[:-1])
@@ -21,6 +22,7 @@ def writeJson(id, data):
       os.makedirs(targetDir)
    with open(targetFile, 'w') as outfile:
       json.dump(data, outfile)
+   return fullId
       
 index={}
 
@@ -34,9 +36,9 @@ def populateIndex(data):
             id=value
          result[key]=populateIndex(value)
       if(id != ""):
-         writeJson(id, result)
+         newId=writeJson(id, result)
          index[id]=result
-         return id
+         return newId
       return result
    elif  isinstance(data, list):
       result=[]
