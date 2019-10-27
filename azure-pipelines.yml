@@ -31,7 +31,7 @@ jobs:
           script: 'pwd'
       - task: CopyFiles@2
         inputs:
-          SourceFolder: '_out'
+          SourceFolder: '__out'
           contents: '**'
           targetFolder: $(Build.ArtifactStagingDirectory)
       - task: PublishBuildArtifacts@1
