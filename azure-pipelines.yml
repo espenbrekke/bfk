@@ -21,5 +21,12 @@ jobs:
           #pythonInterpreter: # Optional
           #workingDirectory: # Optional
           #failOnStderr: false # Optional
-      - publish: $(System.DefaultWorkingDirectory)/out/**.*
-        artifact: WebApp
+
+      - task: CopyFiles@2
+        inputs:
+        contents: 'out/**'
+        targetFolder: $(Build.ArtifactStagingDirectory)
+      - task: PublishBuildArtifacts@1
+        inputs:
+        pathToPublish: $(Build.ArtifactStagingDirectory)
+        artifactName: MyBuildOutputs
